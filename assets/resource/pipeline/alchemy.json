@@ -296,9 +296,12 @@
             640,
             430
         ],
+        "pre_delay": 1500,
+        "repeat": 3,
+        "repeat_delay": 1500,
         "post_delay": 1000,
         "focus": {
-            "succeeded": "已关闭结果，开始检查并补充空槽"
+            "succeeded": "已执行结果弹层关闭重试，开始检查并补充空槽"
         },
         "next": [
             "Alchemy.MainFilled",
