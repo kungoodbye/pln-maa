@@ -40,7 +40,7 @@ MaaFw==5.11.1
 pytest==8.4.2
 jsonschema==4.26.0
 referencing==0.37.0
-json-with-comments==1.0.2
+json-with-comments==1.2.10
 Pillow==11.3.0
 ```
 

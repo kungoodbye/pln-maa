@@ -455,3 +455,7 @@ debug
 
 # Local isolated worktrees
 .worktrees/
+
+# Local Python environment and Maa project scaffolding
+.venv/
+.create-maa-project/
