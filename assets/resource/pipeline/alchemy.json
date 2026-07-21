@@ -293,7 +293,7 @@
         "recognition": "DirectHit",
         "action": "Click",
         "target": [
-            640,
+            220,
             430
         ],
         "pre_delay": 1500,
