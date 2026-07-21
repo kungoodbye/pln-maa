@@ -11,6 +11,9 @@
             "合成"
         ],
         "action": "DoNothing",
+        "focus": {
+            "succeeded": "已确认合成页面"
+        },
         "next": [
             "Alchemy.EnsureSort"
         ]
@@ -116,6 +119,9 @@
         ],
         "action": "Click",
         "post_delay": 700,
+        "focus": {
+            "succeeded": "主料补充完成：小齿轮"
+        },
         "next": [
             "Alchemy.MainFilled"
         ]
@@ -214,6 +220,9 @@
         ],
         "action": "Click",
         "post_delay": 700,
+        "focus": {
+            "succeeded": "副料补充完成：草菇或小石头"
+        },
         "next": [
             "Alchemy.SubFilled"
         ]
@@ -231,6 +240,9 @@
         ],
         "action": "Click",
         "post_delay": 800,
+        "focus": {
+            "succeeded": "已点击合成开始"
+        },
         "next": [
             "Alchemy.WaitRunning"
         ]
@@ -247,7 +259,10 @@
             "停止"
         ],
         "action": "DoNothing",
-        "timeout": 15000,
+        "timeout": -1,
+        "focus": {
+            "succeeded": "已进入连续合成，等待材料耗尽……"
+        },
         "next": [
             "Alchemy.WaitFinished"
         ]
@@ -267,6 +282,9 @@
         "action": "DoNothing",
         "timeout": -1,
         "rate_limit": 800,
+        "focus": {
+            "succeeded": "检测到连续合成结束"
+        },
         "next": [
             "Alchemy.DismissResult"
         ]
@@ -279,6 +297,9 @@
             430
         ],
         "post_delay": 1000,
+        "focus": {
+            "succeeded": "已关闭结果，开始检查并补充空槽"
+        },
         "next": [
             "Alchemy.MainFilled",
             "Alchemy.MainEmpty"
@@ -286,6 +307,9 @@
     },
     "Alchemy.NormalEnd": {
         "recognition": "DirectHit",
-        "action": "DoNothing"
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "第一屏缺少必需材料，连续炼金正常结束"
+        }
     }
 }
