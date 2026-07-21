@@ -14,7 +14,7 @@
                 "class_regex": "UnityWndClass",
                 "window_regex": "飘流幻境新世界",
                 "screencap": "FramePool",
-                "mouse": "PostMessageWithCursorPos",
+                "mouse": "Seize",
                 "keyboard": "PostMessageWithCursorPos"
             }
         }
@@ -29,10 +29,10 @@
     ],
     "task": [
         {
-            "name": "炼金最小测试",
+            "name": "连续炼金",
             "entry": "Alchemy.EnsureUI",
             "default_check": true,
-            "description": "确认合成页面，放入小齿轮和小石头，不开始合成"
+            "description": "第一屏自动补充小齿轮与草菇或小石头并连续合成，任一必需材料耗尽后正常停止"
         }
     ]
 }
