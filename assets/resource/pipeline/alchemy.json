@@ -29,22 +29,65 @@
         ],
         "action": "DoNothing",
         "next": [
-            "Alchemy.ClickGear200"
+            "Alchemy.MainFilled",
+            "Alchemy.MainEmpty"
         ]
     },
-    "Alchemy.ClickGear200": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            888,
-            295
+    "Alchemy.MainFilled": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            460,
+            120,
+            170,
+            170
         ],
+        "template": "alchemy/gear.png",
+        "threshold": 0.94,
+        "method": 10001,
+        "green_mask": true,
+        "action": "DoNothing",
+        "next": [
+            "Alchemy.SubFilled",
+            "Alchemy.SubEmpty"
+        ]
+    },
+    "Alchemy.MainEmpty": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            460,
+            120,
+            170,
+            170
+        ],
+        "template": "alchemy/empty_main.png",
+        "threshold": 0.75,
+        "action": "DoNothing",
+        "next": [
+            "Alchemy.RefillMain",
+            "Alchemy.NormalEnd"
+        ]
+    },
+    "Alchemy.RefillMain": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            835,
+            145,
+            405,
+            460
+        ],
+        "template": "alchemy/gear.png",
+        "threshold": 0.9,
+        "method": 10001,
+        "green_mask": true,
+        "order_by": "Vertical",
+        "index": 0,
+        "action": "Click",
         "post_delay": 600,
         "next": [
-            "Alchemy.WaitGearDialog"
+            "Alchemy.WaitMainDialog"
         ]
     },
-    "Alchemy.WaitGearDialog": {
+    "Alchemy.WaitMainDialog": {
         "recognition": "OCR",
         "roi": [
             350,
@@ -57,10 +100,10 @@
         ],
         "action": "DoNothing",
         "next": [
-            "Alchemy.ConfirmGear"
+            "Alchemy.ConfirmMain"
         ]
     },
-    "Alchemy.ConfirmGear": {
+    "Alchemy.ConfirmMain": {
         "recognition": "OCR",
         "roi": [
             500,
@@ -74,22 +117,75 @@
         "action": "Click",
         "post_delay": 700,
         "next": [
-            "Alchemy.ClickStone200"
+            "Alchemy.MainFilled"
         ]
     },
-    "Alchemy.ClickStone200": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1082,
-            490
+    "Alchemy.SubFilled": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            620,
+            245,
+            170,
+            170
         ],
+        "template": [
+            "alchemy/grass_mushroom.png",
+            "alchemy/small_stone.png"
+        ],
+        "threshold": [
+            0.95,
+            0.95
+        ],
+        "method": 10001,
+        "green_mask": true,
+        "action": "DoNothing",
+        "next": [
+            "Alchemy.StartAlchemy"
+        ]
+    },
+    "Alchemy.SubEmpty": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            620,
+            245,
+            170,
+            170
+        ],
+        "template": "alchemy/empty_sub.png",
+        "threshold": 0.75,
+        "action": "DoNothing",
+        "next": [
+            "Alchemy.RefillSub",
+            "Alchemy.NormalEnd"
+        ]
+    },
+    "Alchemy.RefillSub": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            835,
+            145,
+            405,
+            460
+        ],
+        "template": [
+            "alchemy/grass_mushroom.png",
+            "alchemy/small_stone.png"
+        ],
+        "threshold": [
+            0.9,
+            0.9
+        ],
+        "method": 10001,
+        "green_mask": true,
+        "order_by": "Vertical",
+        "index": 0,
+        "action": "Click",
         "post_delay": 600,
         "next": [
-            "Alchemy.WaitStoneDialog"
+            "Alchemy.WaitSubDialog"
         ]
     },
-    "Alchemy.WaitStoneDialog": {
+    "Alchemy.WaitSubDialog": {
         "recognition": "OCR",
         "roi": [
             350,
@@ -102,10 +198,10 @@
         ],
         "action": "DoNothing",
         "next": [
-            "Alchemy.ConfirmStone"
+            "Alchemy.ConfirmSub"
         ]
     },
-    "Alchemy.ConfirmStone": {
+    "Alchemy.ConfirmSub": {
         "recognition": "OCR",
         "roi": [
             500,
@@ -119,21 +215,77 @@
         "action": "Click",
         "post_delay": 700,
         "next": [
-            "Alchemy.Done"
+            "Alchemy.SubFilled"
         ]
     },
-    "Alchemy.Done": {
+    "Alchemy.StartAlchemy": {
         "recognition": "OCR",
         "roi": [
-            1050,
-            75,
-            190,
-            95
+            1010,
+            570,
+            240,
+            120
         ],
         "expected": [
-            "物等小→大",
-            "物等小"
+            "合成开始"
         ],
+        "action": "Click",
+        "post_delay": 800,
+        "next": [
+            "Alchemy.WaitRunning"
+        ]
+    },
+    "Alchemy.WaitRunning": {
+        "recognition": "OCR",
+        "roi": [
+            540,
+            565,
+            200,
+            120
+        ],
+        "expected": [
+            "停止"
+        ],
+        "action": "DoNothing",
+        "timeout": 15000,
+        "next": [
+            "Alchemy.WaitFinished"
+        ]
+    },
+    "Alchemy.WaitFinished": {
+        "recognition": "OCR",
+        "roi": [
+            540,
+            565,
+            200,
+            120
+        ],
+        "expected": [
+            "停止"
+        ],
+        "inverse": true,
+        "action": "DoNothing",
+        "timeout": -1,
+        "rate_limit": 800,
+        "next": [
+            "Alchemy.DismissResult"
+        ]
+    },
+    "Alchemy.DismissResult": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            640,
+            430
+        ],
+        "post_delay": 1000,
+        "next": [
+            "Alchemy.MainFilled",
+            "Alchemy.MainEmpty"
+        ]
+    },
+    "Alchemy.NormalEnd": {
+        "recognition": "DirectHit",
         "action": "DoNothing"
     }
 }
