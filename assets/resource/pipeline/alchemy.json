@@ -1,0 +1,139 @@
+{
+    "Alchemy.EnsureUI": {
+        "recognition": "OCR",
+        "roi": [
+            35,
+            0,
+            190,
+            80
+        ],
+        "expected": [
+            "合成"
+        ],
+        "action": "DoNothing",
+        "next": [
+            "Alchemy.EnsureSort"
+        ]
+    },
+    "Alchemy.EnsureSort": {
+        "recognition": "OCR",
+        "roi": [
+            1050,
+            75,
+            190,
+            95
+        ],
+        "expected": [
+            "物等小→大",
+            "物等小"
+        ],
+        "action": "DoNothing",
+        "next": [
+            "Alchemy.ClickGear200"
+        ]
+    },
+    "Alchemy.ClickGear200": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            888,
+            295
+        ],
+        "post_delay": 600,
+        "next": [
+            "Alchemy.WaitGearDialog"
+        ]
+    },
+    "Alchemy.WaitGearDialog": {
+        "recognition": "OCR",
+        "roi": [
+            350,
+            80,
+            580,
+            560
+        ],
+        "expected": [
+            "输入数量"
+        ],
+        "action": "DoNothing",
+        "next": [
+            "Alchemy.ConfirmGear"
+        ]
+    },
+    "Alchemy.ConfirmGear": {
+        "recognition": "OCR",
+        "roi": [
+            500,
+            485,
+            280,
+            120
+        ],
+        "expected": [
+            "确定"
+        ],
+        "action": "Click",
+        "post_delay": 700,
+        "next": [
+            "Alchemy.ClickStone200"
+        ]
+    },
+    "Alchemy.ClickStone200": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1082,
+            490
+        ],
+        "post_delay": 600,
+        "next": [
+            "Alchemy.WaitStoneDialog"
+        ]
+    },
+    "Alchemy.WaitStoneDialog": {
+        "recognition": "OCR",
+        "roi": [
+            350,
+            80,
+            580,
+            560
+        ],
+        "expected": [
+            "输入数量"
+        ],
+        "action": "DoNothing",
+        "next": [
+            "Alchemy.ConfirmStone"
+        ]
+    },
+    "Alchemy.ConfirmStone": {
+        "recognition": "OCR",
+        "roi": [
+            500,
+            485,
+            280,
+            120
+        ],
+        "expected": [
+            "确定"
+        ],
+        "action": "Click",
+        "post_delay": 700,
+        "next": [
+            "Alchemy.Done"
+        ]
+    },
+    "Alchemy.Done": {
+        "recognition": "OCR",
+        "roi": [
+            1050,
+            75,
+            190,
+            95
+        ],
+        "expected": [
+            "物等小→大",
+            "物等小"
+        ],
+        "action": "DoNothing"
+    }
+}
