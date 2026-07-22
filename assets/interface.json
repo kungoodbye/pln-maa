@@ -32,7 +32,7 @@
             "name": "连续炼金",
             "entry": "Alchemy.EnsureUI",
             "default_check": true,
-            "description": "第一屏自动补充小齿轮与草菇或小石头并连续合成，任一必需材料耗尽后正常停止"
+            "description": "自动补充小齿轮或柴薪作为主材，并使用馒头、草菇或普通石块作为副材连续合成；副料未找到时向上搜索一屏"
         }
     ]
 }

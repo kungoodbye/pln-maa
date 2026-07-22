@@ -44,8 +44,14 @@
             170,
             170
         ],
-        "template": "alchemy/gear.png",
-        "threshold": 0.94,
+        "template": [
+            "alchemy/gear.png",
+            "alchemy/firewood.png"
+        ],
+        "threshold": [
+            0.94,
+            0.78
+        ],
         "method": 10001,
         "green_mask": true,
         "action": "DoNothing",
@@ -78,8 +84,14 @@
             405,
             460
         ],
-        "template": "alchemy/gear.png",
-        "threshold": 0.9,
+        "template": [
+            "alchemy/gear.png",
+            "alchemy/firewood.png"
+        ],
+        "threshold": [
+            0.9,
+            0.78
+        ],
         "method": 10001,
         "green_mask": true,
         "order_by": "Vertical",
@@ -120,7 +132,7 @@
         "action": "Click",
         "post_delay": 700,
         "focus": {
-            "succeeded": "主料补充完成：小齿轮"
+            "succeeded": "主料补充完成：小齿轮或柴薪"
         },
         "next": [
             "Alchemy.MainFilled"
@@ -135,10 +147,12 @@
             170
         ],
         "template": [
+            "alchemy/steamed_bun.png",
             "alchemy/grass_mushroom.png",
             "alchemy/small_stone.png"
         ],
         "threshold": [
+            0.94,
             0.95,
             0.95
         ],
@@ -162,7 +176,7 @@
         "action": "DoNothing",
         "next": [
             "Alchemy.RefillSub",
-            "Alchemy.NormalEnd"
+            "Alchemy.ScrollSubOnce"
         ]
     },
     "Alchemy.RefillSub": {
@@ -171,13 +185,15 @@
             835,
             145,
             405,
-            460
+            390
         ],
         "template": [
+            "alchemy/steamed_bun.png",
             "alchemy/grass_mushroom.png",
             "alchemy/small_stone.png"
         ],
         "threshold": [
+            0.94,
             0.97,
             0.97
         ],
@@ -226,6 +242,117 @@
         "next": [
             "Alchemy.SubFilled"
         ]
+    },
+    "Alchemy.ScrollSubOnce": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            880,
+            570
+        ],
+        "end": [
+            880,
+            330
+        ],
+        "duration": 500,
+        "end_hold": 100,
+        "post_delay": 800,
+        "focus": {
+            "succeeded": "第一页安全区域未找到副料，已向上拖动一次"
+        },
+        "next": [
+            "Alchemy.RefillSubAfterSwipe",
+            "Alchemy.NormalEndAfterSubSwipe"
+        ]
+    },
+    "Alchemy.RefillSubAfterSwipe": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            835,
+            145,
+            405,
+            390
+        ],
+        "template": [
+            "alchemy/steamed_bun.png",
+            "alchemy/grass_mushroom.png",
+            "alchemy/small_stone.png"
+        ],
+        "threshold": [
+            0.94,
+            0.97,
+            0.97
+        ],
+        "method": 10001,
+        "green_mask": true,
+        "order_by": "Vertical",
+        "index": 0,
+        "action": "Click",
+        "post_delay": 600,
+        "next": [
+            "Alchemy.WaitSubDialogAfterSwipe"
+        ]
+    },
+    "Alchemy.WaitSubDialogAfterSwipe": {
+        "recognition": "OCR",
+        "roi": [
+            350,
+            80,
+            580,
+            560
+        ],
+        "expected": [
+            "输入数量"
+        ],
+        "action": "DoNothing",
+        "next": [
+            "Alchemy.ConfirmSubAfterSwipe"
+        ]
+    },
+    "Alchemy.ConfirmSubAfterSwipe": {
+        "recognition": "OCR",
+        "roi": [
+            500,
+            485,
+            280,
+            120
+        ],
+        "expected": [
+            "确定"
+        ],
+        "action": "Click",
+        "post_delay": 700,
+        "next": [
+            "Alchemy.RestoreInventoryTop"
+        ]
+    },
+    "Alchemy.RestoreInventoryTop": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            880,
+            330
+        ],
+        "end": [
+            880,
+            570
+        ],
+        "duration": 500,
+        "end_hold": 100,
+        "post_delay": 800,
+        "focus": {
+            "succeeded": "副料补充完成，背包已复位到顶部"
+        },
+        "next": [
+            "Alchemy.SubFilled"
+        ]
+    },
+    "Alchemy.NormalEndAfterSubSwipe": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "向上拖动一次后仍未找到副料，连续炼金正常结束"
+        }
     },
     "Alchemy.StartAlchemy": {
         "recognition": "OCR",
