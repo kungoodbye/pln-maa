@@ -151,8 +151,8 @@
 
 ## 依赖和发布
 
-- 前端：Avalonia 11，.NET 8 Windows x64 自包含发布。
+- 前端：Avalonia 11，.NET 10 Windows x64 自包含发布。
 - 自动化：MaaFramework 官方 C# Binding 与对应的 Windows 原生运行库；使用 `MaaToolkit.Shared.Desktop.Window.Find`、Win32 Controller、MaaResource 和 MaaTasker。
-- 构建机需要 .NET 8 SDK；当前本机只有 .NET Runtime，实施前需要安装 SDK 或改用 CI 构建。
+- 构建机需要 .NET 10 SDK；当前本机只有 .NET Runtime，实施前需要安装 SDK 或改用 CI 构建。
 - 发布流程扩展现有 GitHub Actions：先构建材料目录/模板和 Avalonia publish，再将发布输出、Maa 原生库、项目资源、OCR、许可证压缩为 Windows x64 ZIP。
 - 包中保留 MaaFramework、Avalonia 及其依赖的适用许可证和第三方声明。
