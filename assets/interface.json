@@ -33,6 +33,12 @@
             "entry": "Alchemy.EnsureUI",
             "default_check": true,
             "description": "自动补充小齿轮或柴薪作为主材，并使用馒头、草菇或普通石块作为副材连续合成；副料未找到时向上搜索一屏"
+        },
+        {
+            "name": "回收小鸡腿",
+            "entry": "Recycle.OpenBin",
+            "default_check": false,
+            "description": "自动打开资源回收桶，最多下滑三次回收所有小鸡腿；找不到时正常结束"
         }
     ]
 }
