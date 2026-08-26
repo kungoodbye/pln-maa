@@ -1,0 +1,319 @@
+{
+    "Arena.EnsureUI": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            950,
+            600,
+            330,
+            110
+        ],
+        "template": "arena/join_battle.png",
+        "threshold": 0.8,
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "已确认处于玩家对战界面"
+        },
+        "next": [
+            "Arena.CheckVitality5Plus",
+            "Arena.CheckVitalityNeedRefill",
+            "Arena.ClickJoinBattle"
+        ]
+    },
+    "Arena.CheckVitality5Plus": {
+        "recognition": "OCR",
+        "roi": [
+            820,
+            500,
+            260,
+            50
+        ],
+        "expected": [
+            "5/10",
+            "6/10",
+            "7/10",
+            "8/10",
+            "9/10",
+            "10/10",
+            "5/",
+            "6/",
+            "7/",
+            "8/",
+            "9/",
+            "10/"
+        ],
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "活力值已达到目标 (>=5)，准备参与对战"
+        },
+        "next": [
+            "Arena.ClickJoinBattle"
+        ]
+    },
+    "Arena.CheckVitalityNeedRefill": {
+        "recognition": "OCR",
+        "roi": [
+            820,
+            500,
+            260,
+            50
+        ],
+        "expected": [
+            "0/10",
+            "1/10",
+            "2/10",
+            "3/10",
+            "4/10",
+            "0/",
+            "1/",
+            "2/",
+            "3/",
+            "4/"
+        ],
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "活力值不足 5，准备补充活力"
+        },
+        "next": [
+            "Arena.ClickAddVitality"
+        ]
+    },
+    "Arena.ClickAddVitality": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            1110,
+            485,
+            65,
+            60
+        ],
+        "template": "arena/plus_btn.png",
+        "threshold": 0.8,
+        "action": "Click",
+        "post_delay": 800,
+        "focus": {
+            "succeeded": "已精准点击加号按钮，等待购买弹窗"
+        },
+        "next": [
+            "Arena.ConfirmBuyVitality",
+            "Arena.WaitVitalityDialog",
+            "Arena.ClickAddVitality"
+        ]
+    },
+    "Arena.WaitVitalityDialog": {
+        "recognition": "OCR",
+        "roi": [
+            420,
+            200,
+            440,
+            90
+        ],
+        "expected": [
+            "活力值恢复"
+        ],
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "已检测到活力值恢复弹窗"
+        },
+        "next": [
+            "Arena.ConfirmBuyVitality",
+            "Arena.StopNotEnoughDiamonds"
+        ]
+    },
+    "Arena.ConfirmBuyVitality": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            630,
+            440,
+            200,
+            90
+        ],
+        "template": "arena/confirm_btn.png",
+        "threshold": 0.8,
+        "action": "Click",
+        "post_delay": 800,
+        "focus": {
+            "succeeded": "已确认消耗绿钻购买活力值 +1"
+        },
+        "next": [
+            "Arena.EnsureUI"
+        ]
+    },
+    "Arena.StopNotEnoughDiamonds": {
+        "recognition": "OCR",
+        "roi": [
+            380,
+            280,
+            520,
+            160
+        ],
+        "expected": [
+            "不足",
+            "绿钻不足"
+        ],
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "绿钻/绑定绿钻不足，任务安全结束"
+        }
+    },
+    "Arena.ClickJoinBattle": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            950,
+            600,
+            330,
+            110
+        ],
+        "template": "arena/join_battle.png",
+        "threshold": 0.8,
+        "timeout": 60000,
+        "action": "Click",
+        "post_delay": 800,
+        "focus": {
+            "succeeded": "已点击参与对战，开始搜寻对手"
+        },
+        "next": [
+            "Arena.ConfirmNoChestSlot",
+            "Arena.WaitBattleStart",
+            "Arena.WaitSearching"
+        ]
+    },
+    "Arena.ConfirmNoChestSlot": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            630,
+            440,
+            200,
+            90
+        ],
+        "template": "arena/confirm_btn.png",
+        "threshold": 0.8,
+        "timeout": 60000,
+        "action": "Click",
+        "post_delay": 800,
+        "focus": {
+            "succeeded": "检测到无宝箱栏位提示，已点击确定继续对战"
+        },
+        "next": [
+            "Arena.WaitBattleStart",
+            "Arena.WaitSearching"
+        ]
+    },
+    "Arena.WaitSearching": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            920,
+            620,
+            340,
+            90
+        ],
+        "template": "arena/searching_opponent.png",
+        "threshold": 0.75,
+        "timeout": 60000,
+        "action": "DoNothing",
+        "post_delay": 1000,
+        "focus": {
+            "succeeded": "正在搜寻对手中..."
+        },
+        "next": [
+            "Arena.WaitBattleStart",
+            "Arena.WaitSearching"
+        ]
+    },
+    "Arena.WaitBattleStart": {
+        "recognition": "OCR",
+        "roi": [
+            180,
+            60,
+            260,
+            90
+        ],
+        "expected": [
+            "战斗资讯",
+            "第",
+            "回合"
+        ],
+        "timeout": 60000,
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "已成功进入对战场景"
+        },
+        "next": [
+            "Arena.EnableAutoBattle",
+            "Arena.CheckAutoBattleOn"
+        ]
+    },
+    "Arena.EnableAutoBattle": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            560,
+            500,
+            150,
+            130
+        ],
+        "template": "arena/auto_battle_off.png",
+        "threshold": 0.75,
+        "timeout": 300000,
+        "action": "Click",
+        "post_delay": 600,
+        "focus": {
+            "succeeded": "检测到自动战斗未开启，已点击开启 AI 自动战斗"
+        },
+        "next": [
+            "Arena.CheckAutoBattleOn",
+            "Arena.WaitBattleEnd"
+        ]
+    },
+    "Arena.CheckAutoBattleOn": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            560,
+            500,
+            150,
+            130
+        ],
+        "template": "arena/auto_battle_on.png",
+        "threshold": 0.75,
+        "rate_limit": 1500,
+        "timeout": 300000,
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "自动战斗已处于开启状态，保持战斗中..."
+        },
+        "next": [
+            "Arena.WaitBattleEnd",
+            "Arena.CheckAutoBattleOn"
+        ],
+        "on_error": [
+            "Arena.BattleTimeoutEnd"
+        ]
+    },
+    "Arena.WaitBattleEnd": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            950,
+            600,
+            330,
+            110
+        ],
+        "template": "arena/join_battle.png",
+        "threshold": 0.8,
+        "rate_limit": 1500,
+        "timeout": 300000,
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "对战已结束并返回玩家对战界面，进入下一轮"
+        },
+        "next": [
+            "Arena.EnsureUI"
+        ],
+        "on_error": [
+            "Arena.BattleTimeoutEnd"
+        ]
+    },
+    "Arena.BattleTimeoutEnd": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "单场对战超过 5 分钟超时限制，任务已安全停止"
+        }
+    }
+}

@@ -459,3 +459,4 @@ debug
 # Local Python environment and Maa project scaffolding
 .venv/
 .create-maa-project/
+dist/

@@ -7,6 +7,21 @@
     "version": "0.1.0",
     "controller": [
         {
+            "name": "雷电模拟器（ADB）",
+            "type": "Adb",
+            "display_short_side": 720
+        },
+        {
+            "name": "雷电模拟器 14（ADB）",
+            "type": "Adb",
+            "display_short_side": 720
+        },
+        {
+            "name": "雷电模拟器 9（ADB）",
+            "type": "Adb",
+            "display_short_side": 720
+        },
+        {
             "name": "Win32",
             "type": "Win32",
             "display_short_side": 720,
@@ -39,6 +54,12 @@
             "entry": "Recycle.OpenBin",
             "default_check": false,
             "description": "自动打开资源回收桶，最多下滑三次回收所有小鸡腿；找不到时正常结束"
+        },
+        {
+            "name": "玩家对战",
+            "entry": "Arena.EnsureUI",
+            "default_check": false,
+            "description": "自动检测活力值并在不足时花费绿钻补至 5 点，自动参与玩家对战，开启 AI 自动战斗并循环进行；单场对战支持 5 分钟超时保护"
         }
     ]
 }

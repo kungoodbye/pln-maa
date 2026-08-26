@@ -1,11 +1,17 @@
 {
     "Recycle.OpenBin": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            450,
-            340
+        "recognition": "TemplateMatch",
+        "roi": [
+            0,
+            60,
+            1280,
+            600
         ],
+        "template": "recycle/recycle_bin.png",
+        "threshold": 0.9,
+        "method": 10001,
+        "green_mask": true,
+        "action": "Click",
         "post_delay": 600,
         "next": [
             "Recycle.EnsurePage"
@@ -36,6 +42,30 @@
         "next": [
             "Recycle.FindPage1",
             "Recycle.ScrollDown1"
+        ]
+    },
+    "Recycle.SearchCurrentPage2": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "Recycle.FindPage2",
+            "Recycle.ScrollDown2"
+        ]
+    },
+    "Recycle.SearchCurrentPage3": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "Recycle.FindPage3",
+            "Recycle.ScrollDown3"
+        ]
+    },
+    "Recycle.SearchCurrentPage4": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "Recycle.FindPage4",
+            "Recycle.NormalEndNoChicken"
         ]
     },
     "Recycle.FindPage1": {
@@ -237,8 +267,8 @@
             160,
             160
         ],
-        "template": "recycle/chicken_leg.png",
-        "threshold": 0.78,
+        "template": "recycle/selected_chicken_leg.png",
+        "threshold": 0.95,
         "method": 10001,
         "green_mask": true,
         "action": "DoNothing",
@@ -256,6 +286,23 @@
         ],
         "expected": [
             "回收"
+        ],
+        "action": "Click",
+        "post_delay": 800,
+        "next": [
+            "Recycle.ConfirmRecyclePage1"
+        ]
+    },
+    "Recycle.ConfirmRecyclePage1": {
+        "recognition": "OCR",
+        "roi": [
+            620,
+            430,
+            260,
+            120
+        ],
+        "expected": [
+            "确定"
         ],
         "action": "Click",
         "post_delay": 800,
@@ -289,7 +336,7 @@
         "pre_delay": 300,
         "post_delay": 600,
         "focus": {
-            "succeeded": "已回收一组小鸡腿，继续从顶部搜索"
+            "succeeded": "已回收一组小鸡腿，继续在当前页搜索"
         },
         "next": [
             "Recycle.SearchTop"
@@ -348,8 +395,8 @@
             160,
             160
         ],
-        "template": "recycle/chicken_leg.png",
-        "threshold": 0.78,
+        "template": "recycle/selected_chicken_leg.png",
+        "threshold": 0.95,
         "method": 10001,
         "green_mask": true,
         "action": "DoNothing",
@@ -367,6 +414,23 @@
         ],
         "expected": [
             "回收"
+        ],
+        "action": "Click",
+        "post_delay": 800,
+        "next": [
+            "Recycle.ConfirmRecyclePage2"
+        ]
+    },
+    "Recycle.ConfirmRecyclePage2": {
+        "recognition": "OCR",
+        "roi": [
+            620,
+            430,
+            260,
+            120
+        ],
+        "expected": [
+            "确定"
         ],
         "action": "Click",
         "post_delay": 800,
@@ -399,8 +463,11 @@
         ],
         "pre_delay": 300,
         "post_delay": 600,
+        "focus": {
+            "succeeded": "已回收一组小鸡腿，继续在当前页搜索"
+        },
         "next": [
-            "Recycle.RestoreTopFromPage2"
+            "Recycle.SearchCurrentPage2"
         ]
     },
     "Recycle.WaitQuantityPage3": {
@@ -456,8 +523,8 @@
             160,
             160
         ],
-        "template": "recycle/chicken_leg.png",
-        "threshold": 0.78,
+        "template": "recycle/selected_chicken_leg.png",
+        "threshold": 0.95,
         "method": 10001,
         "green_mask": true,
         "action": "DoNothing",
@@ -475,6 +542,23 @@
         ],
         "expected": [
             "回收"
+        ],
+        "action": "Click",
+        "post_delay": 800,
+        "next": [
+            "Recycle.ConfirmRecyclePage3"
+        ]
+    },
+    "Recycle.ConfirmRecyclePage3": {
+        "recognition": "OCR",
+        "roi": [
+            620,
+            430,
+            260,
+            120
+        ],
+        "expected": [
+            "确定"
         ],
         "action": "Click",
         "post_delay": 800,
@@ -507,8 +591,11 @@
         ],
         "pre_delay": 300,
         "post_delay": 600,
+        "focus": {
+            "succeeded": "已回收一组小鸡腿，继续在当前页搜索"
+        },
         "next": [
-            "Recycle.RestoreTopFromPage3Step1"
+            "Recycle.SearchCurrentPage3"
         ]
     },
     "Recycle.WaitQuantityPage4": {
@@ -564,8 +651,8 @@
             160,
             160
         ],
-        "template": "recycle/chicken_leg.png",
-        "threshold": 0.78,
+        "template": "recycle/selected_chicken_leg.png",
+        "threshold": 0.95,
         "method": 10001,
         "green_mask": true,
         "action": "DoNothing",
@@ -583,6 +670,23 @@
         ],
         "expected": [
             "回收"
+        ],
+        "action": "Click",
+        "post_delay": 800,
+        "next": [
+            "Recycle.ConfirmRecyclePage4"
+        ]
+    },
+    "Recycle.ConfirmRecyclePage4": {
+        "recognition": "OCR",
+        "roi": [
+            620,
+            430,
+            260,
+            120
+        ],
+        "expected": [
+            "确定"
         ],
         "action": "Click",
         "post_delay": 800,
@@ -615,119 +719,11 @@
         ],
         "pre_delay": 300,
         "post_delay": 600,
-        "next": [
-            "Recycle.RestoreTopFromPage4Step1"
-        ]
-    },
-    "Recycle.RestoreTopFromPage2": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            880,
-            330
-        ],
-        "end": [
-            880,
-            570
-        ],
-        "duration": 500,
-        "end_hold": 100,
-        "post_delay": 800,
-        "next": [
-            "Recycle.SearchTop"
-        ]
-    },
-    "Recycle.RestoreTopFromPage3Step1": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            880,
-            330
-        ],
-        "end": [
-            880,
-            570
-        ],
-        "duration": 500,
-        "end_hold": 100,
-        "post_delay": 800,
-        "next": [
-            "Recycle.RestoreTopFromPage3Step2"
-        ]
-    },
-    "Recycle.RestoreTopFromPage3Step2": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            880,
-            330
-        ],
-        "end": [
-            880,
-            570
-        ],
-        "duration": 500,
-        "end_hold": 100,
-        "post_delay": 800,
-        "next": [
-            "Recycle.SearchTop"
-        ]
-    },
-    "Recycle.RestoreTopFromPage4Step1": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            880,
-            330
-        ],
-        "end": [
-            880,
-            570
-        ],
-        "duration": 500,
-        "end_hold": 100,
-        "post_delay": 800,
-        "next": [
-            "Recycle.RestoreTopFromPage4Step2"
-        ]
-    },
-    "Recycle.RestoreTopFromPage4Step2": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            880,
-            330
-        ],
-        "end": [
-            880,
-            570
-        ],
-        "duration": 500,
-        "end_hold": 100,
-        "post_delay": 800,
-        "next": [
-            "Recycle.RestoreTopFromPage4Step3"
-        ]
-    },
-    "Recycle.RestoreTopFromPage4Step3": {
-        "recognition": "DirectHit",
-        "action": "Swipe",
-        "begin": [
-            880,
-            330
-        ],
-        "end": [
-            880,
-            570
-        ],
-        "duration": 500,
-        "end_hold": 100,
-        "post_delay": 800,
         "focus": {
-            "succeeded": "已回收一组小鸡腿，背包已复位到顶部"
+            "succeeded": "已回收一组小鸡腿，继续在当前页搜索"
         },
         "next": [
-            "Recycle.SearchTop"
+            "Recycle.SearchCurrentPage4"
         ]
     },
     "Recycle.NormalEndNoChicken": {
