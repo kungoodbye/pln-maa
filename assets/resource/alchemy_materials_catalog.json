@@ -1,0 +1,2103 @@
+[
+  {
+    "name": "None",
+    "label": "无 (不启用此顺位)",
+    "description": "留空不启用此顺位材料"
+  },
+  {
+    "name": "毒汁",
+    "label": "毒汁 (Lv1 不可饮用水) [1不]",
+    "description": "物等: Lv1 | 材质: 不可饮用水 | 代码: 1不",
+    "icon": "resource/image/alchemy/icons/1076.png",
+    "item_id": "46058",
+    "template": "alchemy/materials/46058.png"
+  },
+  {
+    "name": "污水",
+    "label": "污水 (Lv1 不可饮用水) [1不]",
+    "description": "物等: Lv1 | 材质: 不可饮用水 | 代码: 1不",
+    "icon": "resource/image/alchemy/icons/1404.png",
+    "item_id": "60003",
+    "template": "alchemy/materials/60003.png"
+  },
+  {
+    "name": "海水",
+    "label": "海水 (Lv1 不可饮用水) [1不]",
+    "description": "物等: Lv1 | 材质: 不可饮用水 | 代码: 1不",
+    "icon": "resource/image/alchemy/icons/1405.png",
+    "item_id": "60001",
+    "template": "alchemy/materials/60001.png"
+  },
+  {
+    "name": "纯净水滴",
+    "label": "纯净水滴 (Lv1 不可饮用水) [1不]",
+    "description": "物等: Lv1 | 材质: 不可饮用水 | 代码: 1不",
+    "icon": "resource/image/alchemy/icons/1673.png",
+    "item_id": "46050",
+    "template": "alchemy/materials/46050.png"
+  },
+  {
+    "name": "妖精蜜糖",
+    "label": "妖精蜜糖 (Lv1 伙伴用品) [1伙]",
+    "description": "物等: Lv1 | 材质: 伙伴用品 | 代码: 1伙",
+    "icon": "resource/image/alchemy/icons/3068.png",
+    "item_id": "27008",
+    "template": "alchemy/materials/27008.png"
+  },
+  {
+    "name": "无敌香蕉船",
+    "label": "无敌香蕉船 (Lv1 伙伴用品) [1伙]",
+    "description": "物等: Lv1 | 材质: 伙伴用品 | 代码: 1伙",
+    "icon": "resource/image/alchemy/icons/3075.png",
+    "item_id": "27000",
+    "template": "alchemy/materials/27000.png"
+  },
+  {
+    "name": "训兽丸",
+    "label": "训兽丸 (Lv1 伙伴用品) [1伙]",
+    "description": "物等: Lv1 | 材质: 伙伴用品 | 代码: 1伙",
+    "icon": "resource/image/alchemy/icons/3071.png",
+    "item_id": "27007",
+    "template": "alchemy/materials/27007.png"
+  },
+  {
+    "name": "灰兔毛",
+    "label": "灰兔毛 (Lv1 兽毛) [1毛]",
+    "description": "物等: Lv1 | 材质: 兽毛 | 代码: 1毛",
+    "icon": "resource/image/alchemy/icons/1542.png",
+    "item_id": "46016",
+    "template": "alchemy/materials/46016.png"
+  },
+  {
+    "name": "白兔毛",
+    "label": "白兔毛 (Lv1 兽毛) [1毛]",
+    "description": "物等: Lv1 | 材质: 兽毛 | 代码: 1毛",
+    "icon": "resource/image/alchemy/icons/1640.png",
+    "item_id": "46015",
+    "template": "alchemy/materials/46015.png"
+  },
+  {
+    "name": "野兔毛",
+    "label": "野兔毛 (Lv1 兽毛) [1毛]",
+    "description": "物等: Lv1 | 材质: 兽毛 | 代码: 1毛",
+    "icon": "resource/image/alchemy/icons/1542.png",
+    "item_id": "46014",
+    "template": "alchemy/materials/46014.png"
+  },
+  {
+    "name": "黑兔毛",
+    "label": "黑兔毛 (Lv1 兽毛) [1毛]",
+    "description": "物等: Lv1 | 材质: 兽毛 | 代码: 1毛",
+    "icon": "resource/image/alchemy/icons/1545.png",
+    "item_id": "46017",
+    "template": "alchemy/materials/46017.png"
+  },
+  {
+    "name": "刺猬的皮",
+    "label": "刺猬的皮 (Lv1 兽皮) [1皮]",
+    "description": "物等: Lv1 | 材质: 兽皮 | 代码: 1皮",
+    "icon": "resource/image/alchemy/icons/1551.png",
+    "item_id": "46129",
+    "template": "alchemy/materials/46129.png"
+  },
+  {
+    "name": "熟皮",
+    "label": "熟皮 (Lv1 兽皮) [1皮]",
+    "description": "物等: Lv1 | 材质: 兽皮 | 代码: 1皮",
+    "icon": "resource/image/alchemy/icons/1270.png",
+    "item_id": "46119",
+    "template": "alchemy/materials/46119.png"
+  },
+  {
+    "name": "狗皮",
+    "label": "狗皮 (Lv1 兽皮) [1皮]",
+    "description": "物等: Lv1 | 材质: 兽皮 | 代码: 1皮",
+    "icon": "resource/image/alchemy/icons/1269.png",
+    "item_id": "46127",
+    "template": "alchemy/materials/46127.png"
+  },
+  {
+    "name": "薄皮",
+    "label": "薄皮 (Lv1 兽皮) [1皮]",
+    "description": "物等: Lv1 | 材质: 兽皮 | 代码: 1皮",
+    "icon": "resource/image/alchemy/icons/1269.png",
+    "item_id": "46126",
+    "template": "alchemy/materials/46126.png"
+  },
+  {
+    "name": "刺猬的针",
+    "label": "刺猬的针 (Lv1 兽骨) [1骨]",
+    "description": "物等: Lv1 | 材质: 兽骨 | 代码: 1骨",
+    "icon": "resource/image/alchemy/icons/1552.png",
+    "item_id": "46130",
+    "template": "alchemy/materials/46130.png"
+  },
+  {
+    "name": "海葵的骨骼",
+    "label": "海葵的骨骼 (Lv1 兽骨) [1骨]",
+    "description": "物等: Lv1 | 材质: 兽骨 | 代码: 1骨",
+    "icon": "resource/image/alchemy/icons/1251.png",
+    "item_id": "46097",
+    "template": "alchemy/materials/46097.png"
+  },
+  {
+    "name": "象牙",
+    "label": "象牙 (Lv1 兽骨) [1骨]",
+    "description": "物等: Lv1 | 材质: 兽骨 | 代码: 1骨",
+    "icon": "resource/image/alchemy/icons/1675.png",
+    "item_id": "46153",
+    "template": "alchemy/materials/46153.png"
+  },
+  {
+    "name": "乌贼墨汁",
+    "label": "乌贼墨汁 (Lv1 分泌物) [1分]",
+    "description": "物等: Lv1 | 材质: 分泌物 | 代码: 1分",
+    "icon": "resource/image/alchemy/icons/1609.png",
+    "item_id": "46100",
+    "template": "alchemy/materials/46100.png"
+  },
+  {
+    "name": "墨汁",
+    "label": "墨汁 (Lv1 分泌物) [1分]",
+    "description": "物等: Lv1 | 材质: 分泌物 | 代码: 1分",
+    "icon": "resource/image/alchemy/icons/1609.png",
+    "item_id": "46101",
+    "template": "alchemy/materials/46101.png"
+  },
+  {
+    "name": "河豚毒液",
+    "label": "河豚毒液 (Lv1 分泌物) [1分]",
+    "description": "物等: Lv1 | 材质: 分泌物 | 代码: 1分",
+    "icon": "resource/image/alchemy/icons/1608.png",
+    "item_id": "46108",
+    "template": "alchemy/materials/46108.png"
+  },
+  {
+    "name": "生长菇素",
+    "label": "生长菇素 (Lv1 分泌物) [1分]",
+    "description": "物等: Lv1 | 材质: 分泌物 | 代码: 1分",
+    "icon": "resource/image/alchemy/icons/1368.png",
+    "item_id": "46054",
+    "template": "alchemy/materials/46054.png"
+  },
+  {
+    "name": "章鱼墨汁",
+    "label": "章鱼墨汁 (Lv1 分泌物) [1分]",
+    "description": "物等: Lv1 | 材质: 分泌物 | 代码: 1分",
+    "icon": "resource/image/alchemy/icons/1609.png",
+    "item_id": "46099",
+    "template": "alchemy/materials/46099.png"
+  },
+  {
+    "name": "麝香",
+    "label": "麝香 (Lv1 分泌物) [1分]",
+    "description": "物等: Lv1 | 材质: 分泌物 | 代码: 1分",
+    "icon": "resource/image/alchemy/icons/1611.png",
+    "item_id": "46109",
+    "template": "alchemy/materials/46109.png"
+  },
+  {
+    "name": "龙涎香",
+    "label": "龙涎香 (Lv1 分泌物) [1分]",
+    "description": "物等: Lv1 | 材质: 分泌物 | 代码: 1分",
+    "icon": "resource/image/alchemy/icons/1611.png",
+    "item_id": "46110",
+    "template": "alchemy/materials/46110.png"
+  },
+  {
+    "name": "海盐",
+    "label": "海盐 (Lv1 化学药剂) [1化]",
+    "description": "物等: Lv1 | 材质: 化学药剂 | 代码: 1化",
+    "icon": "resource/image/alchemy/icons/1235.png",
+    "item_id": "42059",
+    "template": "alchemy/materials/42059.png"
+  },
+  {
+    "name": "原油",
+    "label": "原油 (Lv1 原油) [1原]",
+    "description": "物等: Lv1 | 材质: 原油 | 代码: 1原",
+    "icon": "resource/image/alchemy/icons/1471.png",
+    "item_id": "47001",
+    "template": "alchemy/materials/47001.png"
+  },
+  {
+    "name": "烟叶",
+    "label": "烟叶 (Lv1 叶类纤维) [1叶]",
+    "description": "物等: Lv1 | 材质: 叶类纤维 | 代码: 1叶",
+    "icon": "resource/image/alchemy/icons/1254.png",
+    "item_id": "40009",
+    "template": "alchemy/materials/40009.png"
+  },
+  {
+    "name": "狸猫叶",
+    "label": "狸猫叶 (Lv1 叶类纤维) [1叶]",
+    "description": "物等: Lv1 | 材质: 叶类纤维 | 代码: 1叶",
+    "icon": "resource/image/alchemy/icons/1254.png",
+    "item_id": "46095",
+    "template": "alchemy/materials/46095.png"
+  },
+  {
+    "name": "茶叶",
+    "label": "茶叶 (Lv1 叶类纤维) [1叶]",
+    "description": "物等: Lv1 | 材质: 叶类纤维 | 代码: 1叶",
+    "icon": "resource/image/alchemy/icons/1254.png",
+    "item_id": "40010",
+    "template": "alchemy/materials/40010.png"
+  },
+  {
+    "name": "蜂巢",
+    "label": "蜂巢 (Lv1 巢) [1巢]",
+    "description": "物等: Lv1 | 材质: 巢 | 代码: 1巢",
+    "icon": "resource/image/alchemy/icons/1465.png",
+    "item_id": "46094",
+    "template": "alchemy/materials/46094.png"
+  },
+  {
+    "name": "青蜂巢",
+    "label": "青蜂巢 (Lv1 巢) [1巢]",
+    "description": "物等: Lv1 | 材质: 巢 | 代码: 1巢",
+    "icon": "resource/image/alchemy/icons/1465.png",
+    "item_id": "46098",
+    "template": "alchemy/materials/46098.png"
+  },
+  {
+    "name": "牛粪",
+    "label": "牛粪 (Lv1 排泄物) [1排]",
+    "description": "物等: Lv1 | 材质: 排泄物 | 代码: 1排",
+    "icon": "resource/image/alchemy/icons/1338.png",
+    "item_id": "46121",
+    "template": "alchemy/materials/46121.png"
+  },
+  {
+    "name": "蝙蝠粪便",
+    "label": "蝙蝠粪便 (Lv1 排泄物) [1排]",
+    "description": "物等: Lv1 | 材质: 排泄物 | 代码: 1排",
+    "icon": "resource/image/alchemy/icons/1337.png",
+    "item_id": "46122",
+    "template": "alchemy/materials/46122.png"
+  },
+  {
+    "name": "黏土",
+    "label": "黏土 (Lv1 普通黏土) [1普]",
+    "description": "物等: Lv1 | 材质: 普通黏土 | 代码: 1普",
+    "icon": "resource/image/alchemy/icons/1342.png",
+    "item_id": "44001",
+    "template": "alchemy/materials/44001.png"
+  },
+  {
+    "name": "天狗面具模",
+    "label": "天狗面具模 (Lv1 木材) [1木]",
+    "description": "物等: Lv1 | 材质: 木材 | 代码: 1木",
+    "icon": "resource/image/alchemy/icons/1729.png",
+    "item_id": "46155",
+    "template": "alchemy/materials/46155.png"
+  },
+  {
+    "name": "普通木头",
+    "label": "普通木头 (Lv1 木材) [1木]",
+    "description": "物等: Lv1 | 材质: 木材 | 代码: 1木",
+    "icon": "resource/image/alchemy/icons/1582.png",
+    "item_id": "45005",
+    "template": "alchemy/materials/45005.png"
+  },
+  {
+    "name": "小奇异果",
+    "label": "小奇异果 (Lv1 水果) [1水]",
+    "description": "物等: Lv1 | 材质: 水果 | 代码: 1水",
+    "icon": "resource/image/alchemy/icons/1444.png",
+    "item_id": "41055",
+    "template": "alchemy/materials/41055.png"
+  },
+  {
+    "name": "松果",
+    "label": "松果 (Lv1 水果) [1水]",
+    "description": "物等: Lv1 | 材质: 水果 | 代码: 1水",
+    "icon": "resource/image/alchemy/icons/1743.png",
+    "item_id": "41063",
+    "template": "alchemy/materials/41063.png"
+  },
+  {
+    "name": "芭蕉",
+    "label": "芭蕉 (Lv1 水果) [1水]",
+    "description": "物等: Lv1 | 材质: 水果 | 代码: 1水",
+    "icon": "resource/image/alchemy/icons/1566.png",
+    "item_id": "41048",
+    "template": "alchemy/materials/41048.png"
+  },
+  {
+    "name": "吻仔鱼",
+    "label": "吻仔鱼 (Lv1 海鲜) [1海]",
+    "description": "物等: Lv1 | 材质: 海鲜 | 代码: 1海",
+    "icon": "resource/image/alchemy/icons/1814.png",
+    "item_id": "41093",
+    "template": "alchemy/materials/41093.png"
+  },
+  {
+    "name": "虾子",
+    "label": "虾子 (Lv1 海鲜) [1海]",
+    "description": "物等: Lv1 | 材质: 海鲜 | 代码: 1海",
+    "icon": "resource/image/alchemy/icons/1549.png",
+    "item_id": "41104",
+    "template": "alchemy/materials/41104.png"
+  },
+  {
+    "name": "煤矿",
+    "label": "煤矿 (Lv1 煤) [1煤]",
+    "description": "物等: Lv1 | 材质: 煤 | 代码: 1煤",
+    "icon": "resource/image/alchemy/icons/1487.png",
+    "item_id": "42038",
+    "template": "alchemy/materials/42038.png"
+  },
+  {
+    "name": "海星触角",
+    "label": "海星触角 (Lv1 甲壳) [1壳]",
+    "description": "物等: Lv1 | 材质: 甲壳 | 代码: 1壳",
+    "icon": "resource/image/alchemy/icons/1552.png",
+    "item_id": "46143",
+    "template": "alchemy/materials/46143.png"
+  },
+  {
+    "name": "海水鱼鳞",
+    "label": "海水鱼鳞 (Lv1 甲壳) [1壳]",
+    "description": "物等: Lv1 | 材质: 甲壳 | 代码: 1壳",
+    "icon": "resource/image/alchemy/icons/1310.png",
+    "item_id": "46075",
+    "template": "alchemy/materials/46075.png"
+  },
+  {
+    "name": "海蜇皮",
+    "label": "海蜇皮 (Lv1 甲壳) [1壳]",
+    "description": "物等: Lv1 | 材质: 甲壳 | 代码: 1壳",
+    "icon": "resource/image/alchemy/icons/7235.png",
+    "item_id": "46148",
+    "template": "alchemy/materials/46148.png"
+  },
+  {
+    "name": "淡水鱼鳞",
+    "label": "淡水鱼鳞 (Lv1 甲壳) [1壳]",
+    "description": "物等: Lv1 | 材质: 甲壳 | 代码: 1壳",
+    "icon": "resource/image/alchemy/icons/1309.png",
+    "item_id": "46074",
+    "template": "alchemy/materials/46074.png"
+  },
+  {
+    "name": "深海鱼鳞",
+    "label": "深海鱼鳞 (Lv1 甲壳) [1壳]",
+    "description": "物等: Lv1 | 材质: 甲壳 | 代码: 1壳",
+    "icon": "resource/image/alchemy/icons/1311.png",
+    "item_id": "46076",
+    "template": "alchemy/materials/46076.png"
+  },
+  {
+    "name": "虫的触角",
+    "label": "虫的触角 (Lv1 甲壳) [1壳]",
+    "description": "物等: Lv1 | 材质: 甲壳 | 代码: 1壳",
+    "icon": "resource/image/alchemy/icons/1552.png",
+    "item_id": "46138",
+    "template": "alchemy/materials/46138.png"
+  },
+  {
+    "name": "贝壳",
+    "label": "贝壳 (Lv1 甲壳) [1壳]",
+    "description": "物等: Lv1 | 材质: 甲壳 | 代码: 1壳",
+    "icon": "resource/image/alchemy/icons/1452.png",
+    "item_id": "46113",
+    "template": "alchemy/materials/46113.png"
+  },
+  {
+    "name": "鸟嘴",
+    "label": "鸟嘴 (Lv1 甲壳) [1壳]",
+    "description": "物等: Lv1 | 材质: 甲壳 | 代码: 1壳",
+    "icon": "resource/image/alchemy/icons/1560.png",
+    "item_id": "46136",
+    "template": "alchemy/materials/46136.png"
+  },
+  {
+    "name": "普通石块",
+    "label": "普通石块 (Lv1 石头) [1石]",
+    "description": "物等: Lv1 | 材质: 石头 | 代码: 1石",
+    "icon": "resource/image/alchemy/icons/1188.png",
+    "item_id": "43001",
+    "template": "alchemy/materials/43001.png"
+  },
+  {
+    "name": "奇异鸟羽毛",
+    "label": "奇异鸟羽毛 (Lv1 羽毛) [1羽]",
+    "description": "物等: Lv1 | 材质: 羽毛 | 代码: 1羽",
+    "icon": "resource/image/alchemy/icons/1454.png",
+    "item_id": "46003",
+    "template": "alchemy/materials/46003.png"
+  },
+  {
+    "name": "羽毛",
+    "label": "羽毛 (Lv1 羽毛) [1羽]",
+    "description": "物等: Lv1 | 材质: 羽毛 | 代码: 1羽",
+    "icon": "resource/image/alchemy/icons/1457.png",
+    "item_id": "46001",
+    "template": "alchemy/materials/46001.png"
+  },
+  {
+    "name": "鸵鸟羽毛",
+    "label": "鸵鸟羽毛 (Lv1 羽毛) [1羽]",
+    "description": "物等: Lv1 | 材质: 羽毛 | 代码: 1羽",
+    "icon": "resource/image/alchemy/icons/1455.png",
+    "item_id": "46005",
+    "template": "alchemy/materials/46005.png"
+  },
+  {
+    "name": "鸽子羽毛",
+    "label": "鸽子羽毛 (Lv1 羽毛) [1羽]",
+    "description": "物等: Lv1 | 材质: 羽毛 | 代码: 1羽",
+    "icon": "resource/image/alchemy/icons/1457.png",
+    "item_id": "46002",
+    "template": "alchemy/materials/46002.png"
+  },
+  {
+    "name": "鹦鹉羽毛‧红",
+    "label": "鹦鹉羽毛‧红 (Lv1 羽毛) [1羽]",
+    "description": "物等: Lv1 | 材质: 羽毛 | 代码: 1羽",
+    "icon": "resource/image/alchemy/icons/1454.png",
+    "item_id": "46006",
+    "template": "alchemy/materials/46006.png"
+  },
+  {
+    "name": "鹦鹉羽毛‧绿",
+    "label": "鹦鹉羽毛‧绿 (Lv1 羽毛) [1羽]",
+    "description": "物等: Lv1 | 材质: 羽毛 | 代码: 1羽",
+    "icon": "resource/image/alchemy/icons/1456.png",
+    "item_id": "46009",
+    "template": "alchemy/materials/46009.png"
+  },
+  {
+    "name": "鹦鹉羽毛‧蓝",
+    "label": "鹦鹉羽毛‧蓝 (Lv1 羽毛) [1羽]",
+    "description": "物等: Lv1 | 材质: 羽毛 | 代码: 1羽",
+    "icon": "resource/image/alchemy/icons/1458.png",
+    "item_id": "46008",
+    "template": "alchemy/materials/46008.png"
+  },
+  {
+    "name": "鹦鹉羽毛‧黄",
+    "label": "鹦鹉羽毛‧黄 (Lv1 羽毛) [1羽]",
+    "description": "物等: Lv1 | 材质: 羽毛 | 代码: 1羽",
+    "icon": "resource/image/alchemy/icons/1455.png",
+    "item_id": "46007",
+    "template": "alchemy/materials/46007.png"
+  },
+  {
+    "name": "透明胶质",
+    "label": "透明胶质 (Lv1 胶质) [1胶]",
+    "description": "物等: Lv1 | 材质: 胶质 | 代码: 1胶",
+    "icon": "resource/image/alchemy/icons/1070.png",
+    "item_id": "46056",
+    "template": "alchemy/materials/46056.png"
+  },
+  {
+    "name": "黏液",
+    "label": "黏液 (Lv1 胶质) [1胶]",
+    "description": "物等: Lv1 | 材质: 胶质 | 代码: 1胶",
+    "icon": "resource/image/alchemy/icons/1430.png",
+    "item_id": "46066",
+    "template": "alchemy/materials/46066.png"
+  },
+  {
+    "name": "兰花",
+    "label": "兰花 (Lv1 花类纤维) [1花]",
+    "description": "物等: Lv1 | 材质: 花类纤维 | 代码: 1花",
+    "icon": "resource/image/alchemy/icons/1748.png",
+    "item_id": "40004",
+    "template": "alchemy/materials/40004.png"
+  },
+  {
+    "name": "向日葵",
+    "label": "向日葵 (Lv1 花类纤维) [1花]",
+    "description": "物等: Lv1 | 材质: 花类纤维 | 代码: 1花",
+    "icon": "resource/image/alchemy/icons/1530.png",
+    "item_id": "40006",
+    "template": "alchemy/materials/40006.png"
+  },
+  {
+    "name": "小雏菊",
+    "label": "小雏菊 (Lv1 花类纤维) [1花]",
+    "description": "物等: Lv1 | 材质: 花类纤维 | 代码: 1花",
+    "icon": "resource/image/alchemy/icons/7104.png",
+    "item_id": "40021",
+    "template": "alchemy/materials/40021.png"
+  },
+  {
+    "name": "棉花",
+    "label": "棉花 (Lv1 花类纤维) [1花]",
+    "description": "物等: Lv1 | 材质: 花类纤维 | 代码: 1花",
+    "icon": "resource/image/alchemy/icons/1510.png",
+    "item_id": "40007",
+    "template": "alchemy/materials/40007.png"
+  },
+  {
+    "name": "海芋",
+    "label": "海芋 (Lv1 花类纤维) [1花]",
+    "description": "物等: Lv1 | 材质: 花类纤维 | 代码: 1花",
+    "icon": "resource/image/alchemy/icons/1534.png",
+    "item_id": "40005",
+    "template": "alchemy/materials/40005.png"
+  },
+  {
+    "name": "玫瑰花",
+    "label": "玫瑰花 (Lv1 花类纤维) [1花]",
+    "description": "物等: Lv1 | 材质: 花类纤维 | 代码: 1花",
+    "icon": "resource/image/alchemy/icons/1501.png",
+    "item_id": "40001",
+    "template": "alchemy/materials/40001.png"
+  },
+  {
+    "name": "番红花",
+    "label": "番红花 (Lv1 花类纤维) [1花]",
+    "description": "物等: Lv1 | 材质: 花类纤维 | 代码: 1花",
+    "icon": "resource/image/alchemy/icons/1507.png",
+    "item_id": "40003",
+    "template": "alchemy/materials/40003.png"
+  },
+  {
+    "name": "花粉",
+    "label": "花粉 (Lv1 花类纤维) [1花]",
+    "description": "物等: Lv1 | 材质: 花类纤维 | 代码: 1花",
+    "icon": "resource/image/alchemy/icons/1237.png",
+    "item_id": "41135",
+    "template": "alchemy/materials/41135.png"
+  },
+  {
+    "name": "菊花",
+    "label": "菊花 (Lv1 花类纤维) [1花]",
+    "description": "物等: Lv1 | 材质: 花类纤维 | 代码: 1花",
+    "icon": "resource/image/alchemy/icons/1197.png",
+    "item_id": "40002",
+    "template": "alchemy/materials/40002.png"
+  },
+  {
+    "name": "蓝色小花",
+    "label": "蓝色小花 (Lv1 花类纤维) [1花]",
+    "description": "物等: Lv1 | 材质: 花类纤维 | 代码: 1花",
+    "icon": "resource/image/alchemy/icons/1199.png",
+    "item_id": "40022",
+    "template": "alchemy/materials/40022.png"
+  },
+  {
+    "name": "麻草",
+    "label": "麻草 (Lv1 草类纤维) [1草]",
+    "description": "物等: Lv1 | 材质: 草类纤维 | 代码: 1草",
+    "icon": "resource/image/alchemy/icons/1496.png",
+    "item_id": "40008",
+    "template": "alchemy/materials/40008.png"
+  },
+  {
+    "name": "草菇",
+    "label": "草菇 (Lv1 蔬菜) [1草]",
+    "description": "物等: Lv1 | 材质: 蔬菜 | 代码: 1草",
+    "icon": "resource/image/alchemy/icons/1180.png",
+    "item_id": "41005",
+    "template": "alchemy/materials/41005.png"
+  },
+  {
+    "name": "蘑菇",
+    "label": "蘑菇 (Lv1 蔬菜) [1草]",
+    "description": "物等: Lv1 | 材质: 蔬菜 | 代码: 1草",
+    "icon": "resource/image/alchemy/icons/1177.png",
+    "item_id": "41006",
+    "template": "alchemy/materials/41006.png"
+  },
+  {
+    "name": "香菇",
+    "label": "香菇 (Lv1 蔬菜) [1草]",
+    "description": "物等: Lv1 | 材质: 蔬菜 | 代码: 1草",
+    "icon": "resource/image/alchemy/icons/1176.png",
+    "item_id": "41128",
+    "template": "alchemy/materials/41128.png"
+  },
+  {
+    "name": "大豆",
+    "label": "大豆 (Lv1 豆) [1豆]",
+    "description": "物等: Lv1 | 材质: 豆 | 代码: 1豆",
+    "icon": "resource/image/alchemy/icons/1513.png",
+    "item_id": "41076",
+    "template": "alchemy/materials/41076.png"
+  },
+  {
+    "name": "红豆",
+    "label": "红豆 (Lv1 豆) [1豆]",
+    "description": "物等: Lv1 | 材质: 豆 | 代码: 1豆",
+    "icon": "resource/image/alchemy/icons/1512.png",
+    "item_id": "41074",
+    "template": "alchemy/materials/41074.png"
+  },
+  {
+    "name": "绿豆",
+    "label": "绿豆 (Lv1 豆) [1豆]",
+    "description": "物等: Lv1 | 材质: 豆 | 代码: 1豆",
+    "icon": "resource/image/alchemy/icons/1515.png",
+    "item_id": "41075",
+    "template": "alchemy/materials/41075.png"
+  },
+  {
+    "name": "黄豆",
+    "label": "黄豆 (Lv1 豆) [1豆]",
+    "description": "物等: Lv1 | 材质: 豆 | 代码: 1豆",
+    "icon": "resource/image/alchemy/icons/1513.png",
+    "item_id": "41072",
+    "template": "alchemy/materials/41072.png"
+  },
+  {
+    "name": "黑豆",
+    "label": "黑豆 (Lv1 豆) [1豆]",
+    "description": "物等: Lv1 | 材质: 豆 | 代码: 1豆",
+    "icon": "resource/image/alchemy/icons/1514.png",
+    "item_id": "41073",
+    "template": "alchemy/materials/41073.png"
+  },
+  {
+    "name": "飞镖",
+    "label": "飞镖 (Lv1 铁) [1铁]",
+    "description": "物等: Lv1 | 材质: 铁 | 代码: 1铁",
+    "icon": "resource/image/alchemy/icons/1760.png",
+    "item_id": "33013",
+    "template": "alchemy/materials/33013.png"
+  },
+  {
+    "name": "铜矿",
+    "label": "铜矿 (Lv1 铜) [1铜]",
+    "description": "物等: Lv1 | 材质: 铜 | 代码: 1铜",
+    "icon": "resource/image/alchemy/icons/1486.png",
+    "item_id": "42008",
+    "template": "alchemy/materials/42008.png"
+  },
+  {
+    "name": "大麦",
+    "label": "大麦 (Lv1 麦) [1麦]",
+    "description": "物等: Lv1 | 材质: 麦 | 代码: 1麦",
+    "icon": "resource/image/alchemy/icons/1596.png",
+    "item_id": "41007",
+    "template": "alchemy/materials/41007.png"
+  },
+  {
+    "name": "淡水",
+    "label": "淡水 (Lv2 不可饮用水) [2不]",
+    "description": "物等: Lv2 | 材质: 不可饮用水 | 代码: 2不",
+    "icon": "resource/image/alchemy/icons/1407.png",
+    "item_id": "60002",
+    "template": "alchemy/materials/60002.png"
+  },
+  {
+    "name": "矿泉水",
+    "label": "矿泉水 (Lv2 不可饮用水) [2不]",
+    "description": "物等: Lv2 | 材质: 不可饮用水 | 代码: 2不",
+    "icon": "resource/image/alchemy/icons/1407.png",
+    "item_id": "60006",
+    "template": "alchemy/materials/60006.png"
+  },
+  {
+    "name": "纯水",
+    "label": "纯水 (Lv2 不可饮用水) [2不]",
+    "description": "物等: Lv2 | 材质: 不可饮用水 | 代码: 2不",
+    "icon": "resource/image/alchemy/icons/1405.png",
+    "item_id": "60007",
+    "template": "alchemy/materials/60007.png"
+  },
+  {
+    "name": "黄金眼泪",
+    "label": "黄金眼泪 (Lv2 不可饮用水) [2不]",
+    "description": "物等: Lv2 | 材质: 不可饮用水 | 代码: 2不",
+    "icon": "resource/image/alchemy/icons/1775.png",
+    "item_id": "46047",
+    "template": "alchemy/materials/46047.png"
+  },
+  {
+    "name": "丝丝糖浆",
+    "label": "丝丝糖浆 (Lv2 伙伴用品) [2伙]",
+    "description": "物等: Lv2 | 材质: 伙伴用品 | 代码: 2伙",
+    "icon": "resource/image/alchemy/icons/3203.png",
+    "item_id": "27002",
+    "template": "alchemy/materials/27002.png"
+  },
+  {
+    "name": "兰花糖",
+    "label": "兰花糖 (Lv2 伙伴用品) [2伙]",
+    "description": "物等: Lv2 | 材质: 伙伴用品 | 代码: 2伙",
+    "icon": "resource/image/alchemy/icons/3077.png",
+    "item_id": "27001",
+    "template": "alchemy/materials/27001.png"
+  },
+  {
+    "name": "大麦精力丸",
+    "label": "大麦精力丸 (Lv2 伙伴用品) [2伙]",
+    "description": "物等: Lv2 | 材质: 伙伴用品 | 代码: 2伙",
+    "icon": "resource/image/alchemy/icons/3063.png",
+    "item_id": "27005",
+    "template": "alchemy/materials/27005.png"
+  },
+  {
+    "name": "海贼果汁",
+    "label": "海贼果汁 (Lv2 伙伴用品) [2伙]",
+    "description": "物等: Lv2 | 材质: 伙伴用品 | 代码: 2伙",
+    "icon": "resource/image/alchemy/icons/3078.png",
+    "item_id": "27004",
+    "template": "alchemy/materials/27004.png"
+  },
+  {
+    "name": "火貂毛",
+    "label": "火貂毛 (Lv2 兽毛) [2毛]",
+    "description": "物等: Lv2 | 材质: 兽毛 | 代码: 2毛",
+    "icon": "resource/image/alchemy/icons/1641.png",
+    "item_id": "46024",
+    "template": "alchemy/materials/46024.png"
+  },
+  {
+    "name": "白貂毛",
+    "label": "白貂毛 (Lv2 兽毛) [2毛]",
+    "description": "物等: Lv2 | 材质: 兽毛 | 代码: 2毛",
+    "icon": "resource/image/alchemy/icons/1640.png",
+    "item_id": "46023",
+    "template": "alchemy/materials/46023.png"
+  },
+  {
+    "name": "黄貂毛",
+    "label": "黄貂毛 (Lv2 兽毛) [2毛]",
+    "description": "物等: Lv2 | 材质: 兽毛 | 代码: 2毛",
+    "icon": "resource/image/alchemy/icons/1540.png",
+    "item_id": "46025",
+    "template": "alchemy/materials/46025.png"
+  },
+  {
+    "name": "黑貂毛",
+    "label": "黑貂毛 (Lv2 兽毛) [2毛]",
+    "description": "物等: Lv2 | 材质: 兽毛 | 代码: 2毛",
+    "icon": "resource/image/alchemy/icons/1545.png",
+    "item_id": "46022",
+    "template": "alchemy/materials/46022.png"
+  },
+  {
+    "name": "兽皮",
+    "label": "兽皮 (Lv2 兽皮) [2皮]",
+    "description": "物等: Lv2 | 材质: 兽皮 | 代码: 2皮",
+    "icon": "resource/image/alchemy/icons/1537.png",
+    "item_id": "46128",
+    "template": "alchemy/materials/46128.png"
+  },
+  {
+    "name": "兽皮护腕",
+    "label": "兽皮护腕 (Lv2 兽皮) [2皮]",
+    "description": "物等: Lv2 | 材质: 兽皮 | 代码: 2皮",
+    "icon": "resource/image/alchemy/icons/2650.png",
+    "item_id": "23061",
+    "template": "alchemy/materials/23061.png"
+  },
+  {
+    "name": "兽皮衣",
+    "label": "兽皮衣 (Lv2 兽皮) [2皮]",
+    "description": "物等: Lv2 | 材质: 兽皮 | 代码: 2皮",
+    "icon": "resource/image/alchemy/icons/2642.png",
+    "item_id": "21061",
+    "template": "alchemy/materials/21061.png"
+  },
+  {
+    "name": "猪皮",
+    "label": "猪皮 (Lv2 兽皮) [2皮]",
+    "description": "物等: Lv2 | 材质: 兽皮 | 代码: 2皮",
+    "icon": "resource/image/alchemy/icons/1269.png",
+    "item_id": "46125",
+    "template": "alchemy/materials/46125.png"
+  },
+  {
+    "name": "爪子",
+    "label": "爪子 (Lv2 兽骨) [2骨]",
+    "description": "物等: Lv2 | 材质: 兽骨 | 代码: 2骨",
+    "icon": "resource/image/alchemy/icons/1676.png",
+    "item_id": "46123",
+    "template": "alchemy/materials/46123.png"
+  },
+  {
+    "name": "蜜蜂刺",
+    "label": "蜜蜂刺 (Lv2 兽骨) [2骨]",
+    "description": "物等: Lv2 | 材质: 兽骨 | 代码: 2骨",
+    "icon": "resource/image/alchemy/icons/7455.png",
+    "item_id": "46062",
+    "template": "alchemy/materials/46062.png"
+  },
+  {
+    "name": "七里香",
+    "label": "七里香 (Lv2 叶类纤维) [2叶]",
+    "description": "物等: Lv2 | 材质: 叶类纤维 | 代码: 2叶",
+    "icon": "resource/image/alchemy/icons/1327.png",
+    "item_id": "40015",
+    "template": "alchemy/materials/40015.png"
+  },
+  {
+    "name": "松脂",
+    "label": "松脂 (Lv2 叶类纤维) [2叶]",
+    "description": "物等: Lv2 | 材质: 叶类纤维 | 代码: 2叶",
+    "icon": "resource/image/alchemy/icons/1624.png",
+    "item_id": "40019",
+    "template": "alchemy/materials/40019.png"
+  },
+  {
+    "name": "槟榔",
+    "label": "槟榔 (Lv2 叶类纤维) [2叶]",
+    "description": "物等: Lv2 | 材质: 叶类纤维 | 代码: 2叶",
+    "icon": "resource/image/alchemy/icons/1499.png",
+    "item_id": "40018",
+    "template": "alchemy/materials/40018.png"
+  },
+  {
+    "name": "芦苇",
+    "label": "芦苇 (Lv2 叶类纤维) [2叶]",
+    "description": "物等: Lv2 | 材质: 叶类纤维 | 代码: 2叶",
+    "icon": "resource/image/alchemy/icons/1749.png",
+    "item_id": "40017",
+    "template": "alchemy/materials/40017.png"
+  },
+  {
+    "name": "藤蔓",
+    "label": "藤蔓 (Lv2 叶类纤维) [2叶]",
+    "description": "物等: Lv2 | 材质: 叶类纤维 | 代码: 2叶",
+    "icon": "resource/image/alchemy/icons/1491.png",
+    "item_id": "40011",
+    "template": "alchemy/materials/40011.png"
+  },
+  {
+    "name": "门松",
+    "label": "门松 (Lv2 叶类纤维) [2叶]",
+    "description": "物等: Lv2 | 材质: 叶类纤维 | 代码: 2叶",
+    "icon": "resource/image/alchemy/icons/1244.png",
+    "item_id": "40020",
+    "template": "alchemy/materials/40020.png"
+  },
+  {
+    "name": "黄蜂巢",
+    "label": "黄蜂巢 (Lv2 巢) [2巢]",
+    "description": "物等: Lv2 | 材质: 巢 | 代码: 2巢",
+    "icon": "resource/image/alchemy/icons/1465.png",
+    "item_id": "46096",
+    "template": "alchemy/materials/46096.png"
+  },
+  {
+    "name": "大豆油",
+    "label": "大豆油 (Lv2 提炼油) [2提]",
+    "description": "物等: Lv2 | 材质: 提炼油 | 代码: 2提",
+    "icon": "resource/image/alchemy/icons/1642.png",
+    "item_id": "41077",
+    "template": "alchemy/materials/41077.png"
+  },
+  {
+    "name": "芝麻油",
+    "label": "芝麻油 (Lv2 提炼油) [2提]",
+    "description": "物等: Lv2 | 材质: 提炼油 | 代码: 2提",
+    "icon": "resource/image/alchemy/icons/1642.png",
+    "item_id": "41078",
+    "template": "alchemy/materials/41078.png"
+  },
+  {
+    "name": "星耀之尘‧空",
+    "label": "星耀之尘‧空 (Lv2 星耀) [2星]",
+    "description": "物等: Lv2 | 材质: 星耀 | 代码: 2星",
+    "icon": "resource/image/alchemy/icons/7135.png",
+    "item_id": "43018",
+    "template": "alchemy/materials/43018.png"
+  },
+  {
+    "name": "普通木材",
+    "label": "普通木材 (Lv2 木材) [2木]",
+    "description": "物等: Lv2 | 材质: 木材 | 代码: 2木",
+    "icon": "resource/image/alchemy/icons/1736.png",
+    "item_id": "45001",
+    "template": "alchemy/materials/45001.png"
+  },
+  {
+    "name": "柳安木",
+    "label": "柳安木 (Lv2 木材) [2木]",
+    "description": "物等: Lv2 | 材质: 木材 | 代码: 2木",
+    "icon": "resource/image/alchemy/icons/1750.png",
+    "item_id": "45007",
+    "template": "alchemy/materials/45007.png"
+  },
+  {
+    "name": "橡木棒",
+    "label": "橡木棒 (Lv2 木材) [2木]",
+    "description": "物等: Lv2 | 材质: 木材 | 代码: 2木",
+    "icon": "resource/image/alchemy/icons/1133.png",
+    "item_id": "18031",
+    "template": "alchemy/materials/18031.png"
+  },
+  {
+    "name": "短弓",
+    "label": "短弓 (Lv2 木材) [2木]",
+    "description": "物等: Lv2 | 材质: 木材 | 代码: 2木",
+    "icon": "resource/image/alchemy/icons/1147.png",
+    "item_id": "13031",
+    "template": "alchemy/materials/13031.png"
+  },
+  {
+    "name": "竹子",
+    "label": "竹子 (Lv2 木材) [2木]",
+    "description": "物等: Lv2 | 材质: 木材 | 代码: 2木",
+    "icon": "resource/image/alchemy/icons/1245.png",
+    "item_id": "40016",
+    "template": "alchemy/materials/40016.png"
+  },
+  {
+    "name": "长矛",
+    "label": "长矛 (Lv2 木材) [2木]",
+    "description": "物等: Lv2 | 材质: 木材 | 代码: 2木",
+    "icon": "resource/image/alchemy/icons/1169.png",
+    "item_id": "12031",
+    "template": "alchemy/materials/12031.png"
+  },
+  {
+    "name": "魔杖",
+    "label": "魔杖 (Lv2 木材) [2木]",
+    "description": "物等: Lv2 | 材质: 木材 | 代码: 2木",
+    "icon": "resource/image/alchemy/icons/1129.png",
+    "item_id": "14031",
+    "template": "alchemy/materials/14031.png"
+  },
+  {
+    "name": "哈蜜瓜",
+    "label": "哈蜜瓜 (Lv2 水果) [2水]",
+    "description": "物等: Lv2 | 材质: 水果 | 代码: 2水",
+    "icon": "resource/image/alchemy/icons/1443.png",
+    "item_id": "41054",
+    "template": "alchemy/materials/41054.png"
+  },
+  {
+    "name": "小菠萝",
+    "label": "小菠萝 (Lv2 水果) [2水]",
+    "description": "物等: Lv2 | 材质: 水果 | 代码: 2水",
+    "icon": "resource/image/alchemy/icons/1649.png",
+    "item_id": "41050",
+    "template": "alchemy/materials/41050.png"
+  },
+  {
+    "name": "草莓",
+    "label": "草莓 (Lv2 水果) [2水]",
+    "description": "物等: Lv2 | 材质: 水果 | 代码: 2水",
+    "icon": "resource/image/alchemy/icons/1532.png",
+    "item_id": "41057",
+    "template": "alchemy/materials/41057.png"
+  },
+  {
+    "name": "草莓汁",
+    "label": "草莓汁 (Lv2 水果) [2水]",
+    "description": "物等: Lv2 | 材质: 水果 | 代码: 2水",
+    "icon": "resource/image/alchemy/icons/7204.png",
+    "item_id": "32129",
+    "template": "alchemy/materials/32129.png"
+  },
+  {
+    "name": "葡萄",
+    "label": "葡萄 (Lv2 水果) [2水]",
+    "description": "物等: Lv2 | 材质: 水果 | 代码: 2水",
+    "icon": "resource/image/alchemy/icons/1648.png",
+    "item_id": "41043",
+    "template": "alchemy/materials/41043.png"
+  },
+  {
+    "name": "酸柠檬",
+    "label": "酸柠檬 (Lv2 水果) [2水]",
+    "description": "物等: Lv2 | 材质: 水果 | 代码: 2水",
+    "icon": "resource/image/alchemy/icons/1563.png",
+    "item_id": "41060",
+    "template": "alchemy/materials/41060.png"
+  },
+  {
+    "name": "黄苹果",
+    "label": "黄苹果 (Lv2 水果) [2水]",
+    "description": "物等: Lv2 | 材质: 水果 | 代码: 2水",
+    "icon": "resource/image/alchemy/icons/1446.png",
+    "item_id": "41124",
+    "template": "alchemy/materials/41124.png"
+  },
+  {
+    "name": "吴郭鱼",
+    "label": "吴郭鱼 (Lv2 海鲜) [2海]",
+    "description": "物等: Lv2 | 材质: 海鲜 | 代码: 2海",
+    "icon": "resource/image/alchemy/icons/1813.png",
+    "item_id": "41092",
+    "template": "alchemy/materials/41092.png"
+  },
+  {
+    "name": "黄鱼",
+    "label": "黄鱼 (Lv2 海鲜) [2海]",
+    "description": "物等: Lv2 | 材质: 海鲜 | 代码: 2海",
+    "icon": "resource/image/alchemy/icons/1815.png",
+    "item_id": "41091",
+    "template": "alchemy/materials/41091.png"
+  },
+  {
+    "name": "灰色黏土",
+    "label": "灰色黏土 (Lv2 灰色黏土) [2灰]",
+    "description": "物等: Lv2 | 材质: 灰色黏土 | 代码: 2灰",
+    "icon": "resource/image/alchemy/icons/1339.png",
+    "item_id": "44006",
+    "template": "alchemy/materials/44006.png"
+  },
+  {
+    "name": "煤块",
+    "label": "煤块 (Lv2 煤) [2煤]",
+    "description": "物等: Lv2 | 材质: 煤 | 代码: 2煤",
+    "icon": "resource/image/alchemy/icons/1576.png",
+    "item_id": "42039",
+    "template": "alchemy/materials/42039.png"
+  },
+  {
+    "name": "煤油",
+    "label": "煤油 (Lv2 燃料油) [2燃]",
+    "description": "物等: Lv2 | 材质: 燃料油 | 代码: 2燃",
+    "icon": "resource/image/alchemy/icons/1404.png",
+    "item_id": "47007",
+    "template": "alchemy/materials/47007.png"
+  },
+  {
+    "name": "能力提升丸",
+    "label": "能力提升丸 (Lv2 玩家能力提升丸) [2玩]",
+    "description": "物等: Lv2 | 材质: 玩家能力提升丸 | 代码: 2玩",
+    "icon": "resource/image/alchemy/icons/3844.png",
+    "item_id": "34450",
+    "template": "alchemy/materials/34450.png"
+  },
+  {
+    "name": "海葵触角",
+    "label": "海葵触角 (Lv2 甲壳) [2壳]",
+    "description": "物等: Lv2 | 材质: 甲壳 | 代码: 2壳",
+    "icon": "resource/image/alchemy/icons/1552.png",
+    "item_id": "46144",
+    "template": "alchemy/materials/46144.png"
+  },
+  {
+    "name": "海螺贝壳",
+    "label": "海螺贝壳 (Lv2 甲壳) [2壳]",
+    "description": "物等: Lv2 | 材质: 甲壳 | 代码: 2壳",
+    "icon": "resource/image/alchemy/icons/1387.png",
+    "item_id": "46141",
+    "template": "alchemy/materials/46141.png"
+  },
+  {
+    "name": "海螺贝肉",
+    "label": "海螺贝肉 (Lv2 甲壳) [2壳]",
+    "description": "物等: Lv2 | 材质: 甲壳 | 代码: 2壳",
+    "icon": "resource/image/alchemy/icons/1007.png",
+    "item_id": "46142",
+    "template": "alchemy/materials/46142.png"
+  },
+  {
+    "name": "甲虫的硬角",
+    "label": "甲虫的硬角 (Lv2 甲壳) [2壳]",
+    "description": "物等: Lv2 | 材质: 甲壳 | 代码: 2壳",
+    "icon": "resource/image/alchemy/icons/1560.png",
+    "item_id": "46131",
+    "template": "alchemy/materials/46131.png"
+  },
+  {
+    "name": "硬壳",
+    "label": "硬壳 (Lv2 甲壳) [2壳]",
+    "description": "物等: Lv2 | 材质: 甲壳 | 代码: 2壳",
+    "icon": "resource/image/alchemy/icons/1314.png",
+    "item_id": "46137",
+    "template": "alchemy/materials/46137.png"
+  },
+  {
+    "name": "蚂蚁的触角",
+    "label": "蚂蚁的触角 (Lv2 甲壳) [2壳]",
+    "description": "物等: Lv2 | 材质: 甲壳 | 代码: 2壳",
+    "icon": "resource/image/alchemy/icons/7454.png",
+    "item_id": "46145",
+    "template": "alchemy/materials/46145.png"
+  },
+  {
+    "name": "蚂蚁的锯齿",
+    "label": "蚂蚁的锯齿 (Lv2 甲壳) [2壳]",
+    "description": "物等: Lv2 | 材质: 甲壳 | 代码: 2壳",
+    "icon": "resource/image/alchemy/icons/1552.png",
+    "item_id": "46146",
+    "template": "alchemy/materials/46146.png"
+  },
+  {
+    "name": "蜗牛的黏液",
+    "label": "蜗牛的黏液 (Lv2 甲壳) [2壳]",
+    "description": "物等: Lv2 | 材质: 甲壳 | 代码: 2壳",
+    "icon": "resource/image/alchemy/icons/1609.png",
+    "item_id": "46147",
+    "template": "alchemy/materials/46147.png"
+  },
+  {
+    "name": "白色黏土",
+    "label": "白色黏土 (Lv2 白色黏土) [2白]",
+    "description": "物等: Lv2 | 材质: 白色黏土 | 代码: 2白",
+    "icon": "resource/image/alchemy/icons/1337.png",
+    "item_id": "44004",
+    "template": "alchemy/materials/44004.png"
+  },
+  {
+    "name": "黄色黏土",
+    "label": "黄色黏土 (Lv2 白色黏土) [2白]",
+    "description": "物等: Lv2 | 材质: 白色黏土 | 代码: 2白",
+    "icon": "resource/image/alchemy/icons/1340.png",
+    "item_id": "44005",
+    "template": "alchemy/materials/44005.png"
+  },
+  {
+    "name": "页岩",
+    "label": "页岩 (Lv2 石头) [2石]",
+    "description": "物等: Lv2 | 材质: 石头 | 代码: 2石",
+    "icon": "resource/image/alchemy/icons/1469.png",
+    "item_id": "43002",
+    "template": "alchemy/materials/43002.png"
+  },
+  {
+    "name": "硫磺",
+    "label": "硫磺 (Lv2 硫) [2硫]",
+    "description": "物等: Lv2 | 材质: 硫 | 代码: 2硫",
+    "icon": "resource/image/alchemy/icons/1482.png",
+    "item_id": "42043",
+    "template": "alchemy/materials/42043.png"
+  },
+  {
+    "name": "大芒果种籽",
+    "label": "大芒果种籽 (Lv2 种籽) [2种]",
+    "description": "物等: Lv2 | 材质: 种籽 | 代码: 2种",
+    "icon": "resource/image/alchemy/icons/2756.png",
+    "item_id": "40033",
+    "template": "alchemy/materials/40033.png"
+  },
+  {
+    "name": "大苹果种籽",
+    "label": "大苹果种籽 (Lv2 种籽) [2种]",
+    "description": "物等: Lv2 | 材质: 种籽 | 代码: 2种",
+    "icon": "resource/image/alchemy/icons/2757.png",
+    "item_id": "40028",
+    "template": "alchemy/materials/40028.png"
+  },
+  {
+    "name": "大葡萄种籽",
+    "label": "大葡萄种籽 (Lv2 种籽) [2种]",
+    "description": "物等: Lv2 | 材质: 种籽 | 代码: 2种",
+    "icon": "resource/image/alchemy/icons/2760.png",
+    "item_id": "40035",
+    "template": "alchemy/materials/40035.png"
+  },
+  {
+    "name": "大香瓜种籽",
+    "label": "大香瓜种籽 (Lv2 种籽) [2种]",
+    "description": "物等: Lv2 | 材质: 种籽 | 代码: 2种",
+    "icon": "resource/image/alchemy/icons/2759.png",
+    "item_id": "40031",
+    "template": "alchemy/materials/40031.png"
+  },
+  {
+    "name": "菠萝种籽",
+    "label": "菠萝种籽 (Lv2 种籽) [2种]",
+    "description": "物等: Lv2 | 材质: 种籽 | 代码: 2种",
+    "icon": "resource/image/alchemy/icons/2758.png",
+    "item_id": "40030",
+    "template": "alchemy/materials/40030.png"
+  },
+  {
+    "name": "稻米",
+    "label": "稻米 (Lv2 米) [2米]",
+    "description": "物等: Lv2 | 材质: 米 | 代码: 2米",
+    "icon": "resource/image/alchemy/icons/1290.png",
+    "item_id": "41009",
+    "template": "alchemy/materials/41009.png"
+  },
+  {
+    "name": "红色黏土",
+    "label": "红色黏土 (Lv2 红色黏土) [2红]",
+    "description": "物等: Lv2 | 材质: 红色黏土 | 代码: 2红",
+    "icon": "resource/image/alchemy/icons/1341.png",
+    "item_id": "44002",
+    "template": "alchemy/materials/44002.png"
+  },
+  {
+    "name": "鹅毛",
+    "label": "鹅毛 (Lv2 羽毛) [2羽]",
+    "description": "物等: Lv2 | 材质: 羽毛 | 代码: 2羽",
+    "icon": "resource/image/alchemy/icons/1457.png",
+    "item_id": "46167",
+    "template": "alchemy/materials/46167.png"
+  },
+  {
+    "name": "小鸡腿",
+    "label": "小鸡腿 (Lv2 肉) [2肉]",
+    "description": "物等: Lv2 | 材质: 肉 | 代码: 2肉",
+    "icon": "resource/image/alchemy/icons/1008.png",
+    "item_id": "41090",
+    "template": "alchemy/materials/41090.png"
+  },
+  {
+    "name": "头带",
+    "label": "头带 (Lv2 花类纤维) [2花]",
+    "description": "物等: Lv2 | 材质: 花类纤维 | 代码: 2花",
+    "icon": "resource/image/alchemy/icons/1141.png",
+    "item_id": "22061",
+    "template": "alchemy/materials/22061.png"
+  },
+  {
+    "name": "果花粉",
+    "label": "果花粉 (Lv2 花类纤维) [2花]",
+    "description": "物等: Lv2 | 材质: 花类纤维 | 代码: 2花",
+    "icon": "resource/image/alchemy/icons/1236.png",
+    "item_id": "41137",
+    "template": "alchemy/materials/41137.png"
+  },
+  {
+    "name": "白色球花",
+    "label": "白色球花 (Lv2 花类纤维) [2花]",
+    "description": "物等: Lv2 | 材质: 花类纤维 | 代码: 2花",
+    "icon": "resource/image/alchemy/icons/1598.png",
+    "item_id": "40024",
+    "template": "alchemy/materials/40024.png"
+  },
+  {
+    "name": "花蜜",
+    "label": "花蜜 (Lv2 花类纤维) [2花]",
+    "description": "物等: Lv2 | 材质: 花类纤维 | 代码: 2花",
+    "icon": "resource/image/alchemy/icons/1742.png",
+    "item_id": "41136",
+    "template": "alchemy/materials/41136.png"
+  },
+  {
+    "name": "杂草",
+    "label": "杂草 (Lv2 草类纤维) [2草]",
+    "description": "物等: Lv2 | 材质: 草类纤维 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1185.png",
+    "item_id": "40014",
+    "template": "alchemy/materials/40014.png"
+  },
+  {
+    "name": "纸莎草",
+    "label": "纸莎草 (Lv2 草类纤维) [2草]",
+    "description": "物等: Lv2 | 材质: 草类纤维 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1195.png",
+    "item_id": "40013",
+    "template": "alchemy/materials/40013.png"
+  },
+  {
+    "name": "蔓草",
+    "label": "蔓草 (Lv2 草类纤维) [2草]",
+    "description": "物等: Lv2 | 材质: 草类纤维 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1325.png",
+    "item_id": "40012",
+    "template": "alchemy/materials/40012.png"
+  },
+  {
+    "name": "四季豆(预备用)",
+    "label": "四季豆(预备用) (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1515.png",
+    "item_id": "41033",
+    "template": "alchemy/materials/41033.png"
+  },
+  {
+    "name": "地瓜叶",
+    "label": "地瓜叶 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/7451.png",
+    "item_id": "41019",
+    "template": "alchemy/materials/41019.png"
+  },
+  {
+    "name": "巴西蘑菇",
+    "label": "巴西蘑菇 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1181.png",
+    "item_id": "41129",
+    "template": "alchemy/materials/41129.png"
+  },
+  {
+    "name": "水菇",
+    "label": "水菇 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1182.png",
+    "item_id": "41132",
+    "template": "alchemy/materials/41132.png"
+  },
+  {
+    "name": "白菜",
+    "label": "白菜 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1660.png",
+    "item_id": "41011",
+    "template": "alchemy/materials/41011.png"
+  },
+  {
+    "name": "空心菜",
+    "label": "空心菜 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1753.png",
+    "item_id": "41018",
+    "template": "alchemy/materials/41018.png"
+  },
+  {
+    "name": "粉圆",
+    "label": "粉圆 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1767.png",
+    "item_id": "41133",
+    "template": "alchemy/materials/41133.png"
+  },
+  {
+    "name": "花菇",
+    "label": "花菇 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1178.png",
+    "item_id": "41131",
+    "template": "alchemy/materials/41131.png"
+  },
+  {
+    "name": "芹菜",
+    "label": "芹菜 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1194.png",
+    "item_id": "41013",
+    "template": "alchemy/materials/41013.png"
+  },
+  {
+    "name": "菠菜",
+    "label": "菠菜 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1756.png",
+    "item_id": "41014",
+    "template": "alchemy/materials/41014.png"
+  },
+  {
+    "name": "葱",
+    "label": "葱 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1548.png",
+    "item_id": "41020",
+    "template": "alchemy/materials/41020.png"
+  },
+  {
+    "name": "蒜",
+    "label": "蒜 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1783.png",
+    "item_id": "41021",
+    "template": "alchemy/materials/41021.png"
+  },
+  {
+    "name": "蘑菇孢子",
+    "label": "蘑菇孢子 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1464.png",
+    "item_id": "41134",
+    "template": "alchemy/materials/41134.png"
+  },
+  {
+    "name": "香菜",
+    "label": "香菜 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1754.png",
+    "item_id": "41017",
+    "template": "alchemy/materials/41017.png"
+  },
+  {
+    "name": "高丽菜",
+    "label": "高丽菜 (Lv2 蔬菜) [2草]",
+    "description": "物等: Lv2 | 材质: 蔬菜 | 代码: 2草",
+    "icon": "resource/image/alchemy/icons/1440.png",
+    "item_id": "41012",
+    "template": "alchemy/materials/41012.png"
+  },
+  {
+    "name": "保龄球",
+    "label": "保龄球 (Lv2 铁) [2铁]",
+    "description": "物等: Lv2 | 材质: 铁 | 代码: 2铁",
+    "icon": "resource/image/alchemy/icons/1762.png",
+    "item_id": "33011",
+    "template": "alchemy/materials/33011.png"
+  },
+  {
+    "name": "履鞋",
+    "label": "履鞋 (Lv2 铁) [2铁]",
+    "description": "物等: Lv2 | 材质: 铁 | 代码: 2铁",
+    "icon": "resource/image/alchemy/icons/1144.png",
+    "item_id": "24061",
+    "template": "alchemy/materials/24061.png"
+  },
+  {
+    "name": "铅矿",
+    "label": "铅矿 (Lv2 铅) [2铅]",
+    "description": "物等: Lv2 | 材质: 铅 | 代码: 2铅",
+    "icon": "resource/image/alchemy/icons/1481.png",
+    "item_id": "42028",
+    "template": "alchemy/materials/42028.png"
+  },
+  {
+    "name": "石斧",
+    "label": "石斧 (Lv2 铜) [2铜]",
+    "description": "物等: Lv2 | 材质: 铜 | 代码: 2铜",
+    "icon": "resource/image/alchemy/icons/2378.png",
+    "item_id": "17064",
+    "template": "alchemy/materials/17064.png"
+  },
+  {
+    "name": "铜刀",
+    "label": "铜刀 (Lv2 铜) [2铜]",
+    "description": "物等: Lv2 | 材质: 铜 | 代码: 2铜",
+    "icon": "resource/image/alchemy/icons/2312.png",
+    "item_id": "10031",
+    "template": "alchemy/materials/10031.png"
+  },
+  {
+    "name": "铜剑",
+    "label": "铜剑 (Lv2 铜) [2铜]",
+    "description": "物等: Lv2 | 材质: 铜 | 代码: 2铜",
+    "icon": "resource/image/alchemy/icons/2468.png",
+    "item_id": "11031",
+    "template": "alchemy/materials/11031.png"
+  },
+  {
+    "name": "铜沙",
+    "label": "铜沙 (Lv2 铜) [2铜]",
+    "description": "物等: Lv2 | 材质: 铜 | 代码: 2铜",
+    "icon": "resource/image/alchemy/icons/1462.png",
+    "item_id": "42009",
+    "template": "alchemy/materials/42009.png"
+  },
+  {
+    "name": "铜爪",
+    "label": "铜爪 (Lv2 铜) [2铜]",
+    "description": "物等: Lv2 | 材质: 铜 | 代码: 2铜",
+    "icon": "resource/image/alchemy/icons/2354.png",
+    "item_id": "15031",
+    "template": "alchemy/materials/15031.png"
+  },
+  {
+    "name": "锡矿",
+    "label": "锡矿 (Lv2 锡) [2锡]",
+    "description": "物等: Lv2 | 材质: 锡 | 代码: 2锡",
+    "icon": "resource/image/alchemy/icons/7028.png",
+    "item_id": "42024",
+    "template": "alchemy/materials/42024.png"
+  },
+  {
+    "name": "黑色黏土",
+    "label": "黑色黏土 (Lv2 黑色黏土) [2黑]",
+    "description": "物等: Lv2 | 材质: 黑色黏土 | 代码: 2黑",
+    "icon": "resource/image/alchemy/icons/1338.png",
+    "item_id": "44003",
+    "template": "alchemy/materials/44003.png"
+  },
+  {
+    "name": "月神仙豆",
+    "label": "月神仙豆 (Lv3 伙伴用品) [3伙]",
+    "description": "物等: Lv3 | 材质: 伙伴用品 | 代码: 3伙",
+    "icon": "resource/image/alchemy/icons/3066.png",
+    "item_id": "27009",
+    "template": "alchemy/materials/27009.png"
+  },
+  {
+    "name": "能量星星",
+    "label": "能量星星 (Lv3 伙伴用品) [3伙]",
+    "description": "物等: Lv3 | 材质: 伙伴用品 | 代码: 3伙",
+    "icon": "resource/image/alchemy/icons/7107.png",
+    "item_id": "27051",
+    "template": "alchemy/materials/27051.png"
+  },
+  {
+    "name": "艾琳牌机油",
+    "label": "艾琳牌机油 (Lv3 伙伴用品) [3伙]",
+    "description": "物等: Lv3 | 材质: 伙伴用品 | 代码: 3伙",
+    "icon": "resource/image/alchemy/icons/3067.png",
+    "item_id": "27006",
+    "template": "alchemy/materials/27006.png"
+  },
+  {
+    "name": "萝卡香水",
+    "label": "萝卡香水 (Lv3 伙伴用品) [3伙]",
+    "description": "物等: Lv3 | 材质: 伙伴用品 | 代码: 3伙",
+    "icon": "resource/image/alchemy/icons/3079.png",
+    "item_id": "27003",
+    "template": "alchemy/materials/27003.png"
+  },
+  {
+    "name": "陈年果汁",
+    "label": "陈年果汁 (Lv3 伙伴用品) [3伙]",
+    "description": "物等: Lv3 | 材质: 伙伴用品 | 代码: 3伙",
+    "icon": "resource/image/alchemy/icons/3205.png",
+    "item_id": "27017",
+    "template": "alchemy/materials/27017.png"
+  },
+  {
+    "name": "白骆马毛",
+    "label": "白骆马毛 (Lv3 兽毛) [3毛]",
+    "description": "物等: Lv3 | 材质: 兽毛 | 代码: 3毛",
+    "icon": "resource/image/alchemy/icons/1640.png",
+    "item_id": "46028",
+    "template": "alchemy/materials/46028.png"
+  },
+  {
+    "name": "羊毛",
+    "label": "羊毛 (Lv3 兽毛) [3毛]",
+    "description": "物等: Lv3 | 材质: 兽毛 | 代码: 3毛",
+    "icon": "resource/image/alchemy/icons/1281.png",
+    "item_id": "46030",
+    "template": "alchemy/materials/46030.png"
+  },
+  {
+    "name": "褐骆马毛",
+    "label": "褐骆马毛 (Lv3 兽毛) [3毛]",
+    "description": "物等: Lv3 | 材质: 兽毛 | 代码: 3毛",
+    "icon": "resource/image/alchemy/icons/1544.png",
+    "item_id": "46026",
+    "template": "alchemy/materials/46026.png"
+  },
+  {
+    "name": "黑骆马毛",
+    "label": "黑骆马毛 (Lv3 兽毛) [3毛]",
+    "description": "物等: Lv3 | 材质: 兽毛 | 代码: 3毛",
+    "icon": "resource/image/alchemy/icons/1545.png",
+    "item_id": "46027",
+    "template": "alchemy/materials/46027.png"
+  },
+  {
+    "name": "山羊皮",
+    "label": "山羊皮 (Lv3 兽皮) [3皮]",
+    "description": "物等: Lv3 | 材质: 兽皮 | 代码: 3皮",
+    "icon": "resource/image/alchemy/icons/1269.png",
+    "item_id": "46031",
+    "template": "alchemy/materials/46031.png"
+  },
+  {
+    "name": "白羊皮",
+    "label": "白羊皮 (Lv3 兽皮) [3皮]",
+    "description": "物等: Lv3 | 材质: 兽皮 | 代码: 3皮",
+    "icon": "resource/image/alchemy/icons/1640.png",
+    "item_id": "46034",
+    "template": "alchemy/materials/46034.png"
+  },
+  {
+    "name": "羔羊皮",
+    "label": "羔羊皮 (Lv3 兽皮) [3皮]",
+    "description": "物等: Lv3 | 材质: 兽皮 | 代码: 3皮",
+    "icon": "resource/image/alchemy/icons/1269.png",
+    "item_id": "46032",
+    "template": "alchemy/materials/46032.png"
+  },
+  {
+    "name": "虎皮护腕",
+    "label": "虎皮护腕 (Lv3 兽皮) [3皮]",
+    "description": "物等: Lv3 | 材质: 兽皮 | 代码: 3皮",
+    "icon": "resource/image/alchemy/icons/1165.png",
+    "item_id": "23062",
+    "template": "alchemy/materials/23062.png"
+  },
+  {
+    "name": "虎皮衣",
+    "label": "虎皮衣 (Lv3 兽皮) [3皮]",
+    "description": "物等: Lv3 | 材质: 兽皮 | 代码: 3皮",
+    "icon": "resource/image/alchemy/icons/1166.png",
+    "item_id": "21062",
+    "template": "alchemy/materials/21062.png"
+  },
+  {
+    "name": "鹿皮",
+    "label": "鹿皮 (Lv3 兽皮) [3皮]",
+    "description": "物等: Lv3 | 材质: 兽皮 | 代码: 3皮",
+    "icon": "resource/image/alchemy/icons/1544.png",
+    "item_id": "46059",
+    "template": "alchemy/materials/46059.png"
+  },
+  {
+    "name": "黑羊皮",
+    "label": "黑羊皮 (Lv3 兽皮) [3皮]",
+    "description": "物等: Lv3 | 材质: 兽皮 | 代码: 3皮",
+    "icon": "resource/image/alchemy/icons/1545.png",
+    "item_id": "46033",
+    "template": "alchemy/materials/46033.png"
+  },
+  {
+    "name": "锐骨斧",
+    "label": "锐骨斧 (Lv3 兽骨) [3骨]",
+    "description": "物等: Lv3 | 材质: 兽骨 | 代码: 3骨",
+    "icon": "resource/image/alchemy/icons/2377.png",
+    "item_id": "17067",
+    "template": "alchemy/materials/17067.png"
+  },
+  {
+    "name": "沸腾的水",
+    "label": "沸腾的水 (Lv3 可饮用的水) [3可]",
+    "description": "物等: Lv3 | 材质: 可饮用的水 | 代码: 3可",
+    "icon": "resource/image/alchemy/icons/1405.png",
+    "item_id": "60010",
+    "template": "alchemy/materials/60010.png"
+  },
+  {
+    "name": "煮沸的水",
+    "label": "煮沸的水 (Lv3 可饮用的水) [3可]",
+    "description": "物等: Lv3 | 材质: 可饮用的水 | 代码: 3可",
+    "icon": "resource/image/alchemy/icons/1405.png",
+    "item_id": "60004",
+    "template": "alchemy/materials/60004.png"
+  },
+  {
+    "name": "蒸馏水",
+    "label": "蒸馏水 (Lv3 可饮用的水) [3可]",
+    "description": "物等: Lv3 | 材质: 可饮用的水 | 代码: 3可",
+    "icon": "resource/image/alchemy/icons/1405.png",
+    "item_id": "60005",
+    "template": "alchemy/materials/60005.png"
+  },
+  {
+    "name": "干掉黏土",
+    "label": "干掉黏土 (Lv3 干掉黏土) [3干]",
+    "description": "物等: Lv3 | 材质: 干掉黏土 | 代码: 3干",
+    "icon": "resource/image/alchemy/icons/7069.png",
+    "item_id": "44007",
+    "template": "alchemy/materials/44007.png"
+  },
+  {
+    "name": "焦油",
+    "label": "焦油 (Lv3 提炼油) [3提]",
+    "description": "物等: Lv3 | 材质: 提炼油 | 代码: 3提",
+    "icon": "resource/image/alchemy/icons/1475.png",
+    "item_id": "47006",
+    "template": "alchemy/materials/47006.png"
+  },
+  {
+    "name": "星耀之尘‧地",
+    "label": "星耀之尘‧地 (Lv3 星耀) [3星]",
+    "description": "物等: Lv3 | 材质: 星耀 | 代码: 3星",
+    "icon": "resource/image/alchemy/icons/7131.png",
+    "item_id": "43014",
+    "template": "alchemy/materials/43014.png"
+  },
+  {
+    "name": "星耀之尘‧水",
+    "label": "星耀之尘‧水 (Lv3 星耀) [3星]",
+    "description": "物等: Lv3 | 材质: 星耀 | 代码: 3星",
+    "icon": "resource/image/alchemy/icons/7132.png",
+    "item_id": "43015",
+    "template": "alchemy/materials/43015.png"
+  },
+  {
+    "name": "星耀之尘‧火",
+    "label": "星耀之尘‧火 (Lv3 星耀) [3星]",
+    "description": "物等: Lv3 | 材质: 星耀 | 代码: 3星",
+    "icon": "resource/image/alchemy/icons/7133.png",
+    "item_id": "43016",
+    "template": "alchemy/materials/43016.png"
+  },
+  {
+    "name": "星耀之尘‧风",
+    "label": "星耀之尘‧风 (Lv3 星耀) [3星]",
+    "description": "物等: Lv3 | 材质: 星耀 | 代码: 3星",
+    "icon": "resource/image/alchemy/icons/7134.png",
+    "item_id": "43017",
+    "template": "alchemy/materials/43017.png"
+  },
+  {
+    "name": "柳安木材",
+    "label": "柳安木材 (Lv3 木材) [3木]",
+    "description": "物等: Lv3 | 材质: 木材 | 代码: 3木",
+    "icon": "resource/image/alchemy/icons/1737.png",
+    "item_id": "45003",
+    "template": "alchemy/materials/45003.png"
+  },
+  {
+    "name": "柳安木棒",
+    "label": "柳安木棒 (Lv3 木材) [3木]",
+    "description": "物等: Lv3 | 材质: 木材 | 代码: 3木",
+    "icon": "resource/image/alchemy/icons/1133.png",
+    "item_id": "18032",
+    "template": "alchemy/materials/18032.png"
+  },
+  {
+    "name": "橡木",
+    "label": "橡木 (Lv3 木材) [3木]",
+    "description": "物等: Lv3 | 材质: 木材 | 代码: 3木",
+    "icon": "resource/image/alchemy/icons/1584.png",
+    "item_id": "45006",
+    "template": "alchemy/materials/45006.png"
+  },
+  {
+    "name": "法师魔杖",
+    "label": "法师魔杖 (Lv3 木材) [3木]",
+    "description": "物等: Lv3 | 材质: 木材 | 代码: 3木",
+    "icon": "resource/image/alchemy/icons/1129.png",
+    "item_id": "14032",
+    "template": "alchemy/materials/14032.png"
+  },
+  {
+    "name": "高级短弓",
+    "label": "高级短弓 (Lv3 木材) [3木]",
+    "description": "物等: Lv3 | 材质: 木材 | 代码: 3木",
+    "icon": "resource/image/alchemy/icons/2327.png",
+    "item_id": "13032",
+    "template": "alchemy/materials/13032.png"
+  },
+  {
+    "name": "高级长矛",
+    "label": "高级长矛 (Lv3 木材) [3木]",
+    "description": "物等: Lv3 | 材质: 木材 | 代码: 3木",
+    "icon": "resource/image/alchemy/icons/1169.png",
+    "item_id": "12032",
+    "template": "alchemy/materials/12032.png"
+  },
+  {
+    "name": "奇异果",
+    "label": "奇异果 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1444.png",
+    "item_id": "41058",
+    "template": "alchemy/materials/41058.png"
+  },
+  {
+    "name": "奇异果汁",
+    "label": "奇异果汁 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1624.png",
+    "item_id": "32130",
+    "template": "alchemy/materials/32130.png"
+  },
+  {
+    "name": "新鲜苹果",
+    "label": "新鲜苹果 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1001.png",
+    "item_id": "41126",
+    "template": "alchemy/materials/41126.png"
+  },
+  {
+    "name": "柿子",
+    "label": "柿子 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1658.png",
+    "item_id": "41061",
+    "template": "alchemy/materials/41061.png"
+  },
+  {
+    "name": "椰子",
+    "label": "椰子 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1379.png",
+    "item_id": "41066",
+    "template": "alchemy/materials/41066.png"
+  },
+  {
+    "name": "榛果",
+    "label": "榛果 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1743.png",
+    "item_id": "41049",
+    "template": "alchemy/materials/41049.png"
+  },
+  {
+    "name": "橘子",
+    "label": "橘子 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/2818.png",
+    "item_id": "41042",
+    "template": "alchemy/materials/41042.png"
+  },
+  {
+    "name": "橘子汁",
+    "label": "橘子汁 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1625.png",
+    "item_id": "32121",
+    "template": "alchemy/materials/32121.png"
+  },
+  {
+    "name": "葡萄汁",
+    "label": "葡萄汁 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1623.png",
+    "item_id": "32122",
+    "template": "alchemy/materials/32122.png"
+  },
+  {
+    "name": "西瓜",
+    "label": "西瓜 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1747.png",
+    "item_id": "41047",
+    "template": "alchemy/materials/41047.png"
+  },
+  {
+    "name": "西瓜汁",
+    "label": "西瓜汁 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1622.png",
+    "item_id": "32125",
+    "template": "alchemy/materials/32125.png"
+  },
+  {
+    "name": "青苹果",
+    "label": "青苹果 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1447.png",
+    "item_id": "41125",
+    "template": "alchemy/materials/41125.png"
+  },
+  {
+    "name": "香蕉",
+    "label": "香蕉 (Lv3 水果) [3水]",
+    "description": "物等: Lv3 | 材质: 水果 | 代码: 3水",
+    "icon": "resource/image/alchemy/icons/1566.png",
+    "item_id": "41044",
+    "template": "alchemy/materials/41044.png"
+  },
+  {
+    "name": "沙丁鱼",
+    "label": "沙丁鱼 (Lv3 海鲜) [3海]",
+    "description": "物等: Lv3 | 材质: 海鲜 | 代码: 3海",
+    "icon": "resource/image/alchemy/icons/1812.png",
+    "item_id": "41094",
+    "template": "alchemy/materials/41094.png"
+  },
+  {
+    "name": "煤球",
+    "label": "煤球 (Lv3 煤) [3煤]",
+    "description": "物等: Lv3 | 材质: 煤 | 代码: 3煤",
+    "icon": "resource/image/alchemy/icons/1303.png",
+    "item_id": "42040",
+    "template": "alchemy/materials/42040.png"
+  },
+  {
+    "name": "DEF提升丸",
+    "label": "DEF提升丸 (Lv3 玩家能力提升丸) [3玩]",
+    "description": "物等: Lv3 | 材质: 玩家能力提升丸 | 代码: 3玩",
+    "icon": "resource/image/alchemy/icons/3840.png",
+    "item_id": "34446",
+    "template": "alchemy/materials/34446.png"
+  },
+  {
+    "name": "MDEF提升丸",
+    "label": "MDEF提升丸 (Lv3 玩家能力提升丸) [3玩]",
+    "description": "物等: Lv3 | 材质: 玩家能力提升丸 | 代码: 3玩",
+    "icon": "resource/image/alchemy/icons/3842.png",
+    "item_id": "34448",
+    "template": "alchemy/materials/34448.png"
+  },
+  {
+    "name": "黑曜岩",
+    "label": "黑曜岩 (Lv3 石头) [3石]",
+    "description": "物等: Lv3 | 材质: 石头 | 代码: 3石",
+    "icon": "resource/image/alchemy/icons/1316.png",
+    "item_id": "43003",
+    "template": "alchemy/materials/43003.png"
+  },
+  {
+    "name": "果花蜜",
+    "label": "果花蜜 (Lv3 花类纤维) [3花]",
+    "description": "物等: Lv3 | 材质: 花类纤维 | 代码: 3花",
+    "icon": "resource/image/alchemy/icons/1742.png",
+    "item_id": "41138",
+    "template": "alchemy/materials/41138.png"
+  },
+  {
+    "name": "波斯菊",
+    "label": "波斯菊 (Lv3 花类纤维) [3花]",
+    "description": "物等: Lv3 | 材质: 花类纤维 | 代码: 3花",
+    "icon": "resource/image/alchemy/icons/1198.png",
+    "item_id": "40023",
+    "template": "alchemy/materials/40023.png"
+  },
+  {
+    "name": "红色头带",
+    "label": "红色头带 (Lv3 花类纤维) [3花]",
+    "description": "物等: Lv3 | 材质: 花类纤维 | 代码: 3花",
+    "icon": "resource/image/alchemy/icons/2486.png",
+    "item_id": "22062",
+    "template": "alchemy/materials/22062.png"
+  },
+  {
+    "name": "柔软的藤蔓",
+    "label": "柔软的藤蔓 (Lv3 草类纤维) [3草]",
+    "description": "物等: Lv3 | 材质: 草类纤维 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1493.png",
+    "item_id": "46085",
+    "template": "alchemy/materials/46085.png"
+  },
+  {
+    "name": "草鞋",
+    "label": "草鞋 (Lv3 草类纤维) [3草]",
+    "description": "物等: Lv3 | 材质: 草类纤维 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/2722.png",
+    "item_id": "24067",
+    "template": "alchemy/materials/24067.png"
+  },
+  {
+    "name": "丝瓜",
+    "label": "丝瓜 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1661.png",
+    "item_id": "41026",
+    "template": "alchemy/materials/41026.png"
+  },
+  {
+    "name": "九层塔",
+    "label": "九层塔 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1194.png",
+    "item_id": "41015",
+    "template": "alchemy/materials/41015.png"
+  },
+  {
+    "name": "地瓜",
+    "label": "地瓜 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1450.png",
+    "item_id": "41123",
+    "template": "alchemy/materials/41123.png"
+  },
+  {
+    "name": "大蒜",
+    "label": "大蒜 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1529.png",
+    "item_id": "41023",
+    "template": "alchemy/materials/41023.png"
+  },
+  {
+    "name": "无毒伞菇",
+    "label": "无毒伞菇 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1179.png",
+    "item_id": "41130",
+    "template": "alchemy/materials/41130.png"
+  },
+  {
+    "name": "洋葱",
+    "label": "洋葱 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1531.png",
+    "item_id": "41022",
+    "template": "alchemy/materials/41022.png"
+  },
+  {
+    "name": "白萝卜",
+    "label": "白萝卜 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1451.png",
+    "item_id": "41036",
+    "template": "alchemy/materials/41036.png"
+  },
+  {
+    "name": "肉桂",
+    "label": "肉桂 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1194.png",
+    "item_id": "41025",
+    "template": "alchemy/materials/41025.png"
+  },
+  {
+    "name": "肉荳蔻(预备用)",
+    "label": "肉荳蔻(预备用) (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1493.png",
+    "item_id": "41024",
+    "template": "alchemy/materials/41024.png"
+  },
+  {
+    "name": "胡萝卜",
+    "label": "胡萝卜 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1441.png",
+    "item_id": "41037",
+    "template": "alchemy/materials/41037.png"
+  },
+  {
+    "name": "莴苣",
+    "label": "莴苣 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1664.png",
+    "item_id": "41010",
+    "template": "alchemy/materials/41010.png"
+  },
+  {
+    "name": "西红柿",
+    "label": "西红柿 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1564.png",
+    "item_id": "41051",
+    "template": "alchemy/materials/41051.png"
+  },
+  {
+    "name": "西红柿汁",
+    "label": "西红柿汁 (Lv3 蔬菜) [3草]",
+    "description": "物等: Lv3 | 材质: 蔬菜 | 代码: 3草",
+    "icon": "resource/image/alchemy/icons/1622.png",
+    "item_id": "32126",
+    "template": "alchemy/materials/32126.png"
+  },
+  {
+    "name": "铁矿",
+    "label": "铁矿 (Lv3 铁) [3铁]",
+    "description": "物等: Lv3 | 材质: 铁 | 代码: 3铁",
+    "icon": "resource/image/alchemy/icons/7030.png",
+    "item_id": "42014",
+    "template": "alchemy/materials/42014.png"
+  },
+  {
+    "name": "铅矿沙",
+    "label": "铅矿沙 (Lv3 铅) [3铅]",
+    "description": "物等: Lv3 | 材质: 铅 | 代码: 3铅",
+    "icon": "resource/image/alchemy/icons/1459.png",
+    "item_id": "42029",
+    "template": "alchemy/materials/42029.png"
+  },
+  {
+    "name": "铜块",
+    "label": "铜块 (Lv3 铜) [3铜]",
+    "description": "物等: Lv3 | 材质: 铜 | 代码: 3铜",
+    "icon": "resource/image/alchemy/icons/1575.png",
+    "item_id": "42010",
+    "template": "alchemy/materials/42010.png"
+  },
+  {
+    "name": "青铜刀",
+    "label": "青铜刀 (Lv3 铜) [3铜]",
+    "description": "物等: Lv3 | 材质: 铜 | 代码: 3铜",
+    "icon": "resource/image/alchemy/icons/2313.png",
+    "item_id": "10032",
+    "template": "alchemy/materials/10032.png"
+  },
+  {
+    "name": "青铜剑",
+    "label": "青铜剑 (Lv3 铜) [3铜]",
+    "description": "物等: Lv3 | 材质: 铜 | 代码: 3铜",
+    "icon": "resource/image/alchemy/icons/2469.png",
+    "item_id": "11032",
+    "template": "alchemy/materials/11032.png"
+  },
+  {
+    "name": "青铜手爪",
+    "label": "青铜手爪 (Lv3 铜) [3铜]",
+    "description": "物等: Lv3 | 材质: 铜 | 代码: 3铜",
+    "icon": "resource/image/alchemy/icons/2355.png",
+    "item_id": "15032",
+    "template": "alchemy/materials/15032.png"
+  },
+  {
+    "name": "铝矿",
+    "label": "铝矿 (Lv3 铝) [3铝]",
+    "description": "物等: Lv3 | 材质: 铝 | 代码: 3铝",
+    "icon": "resource/image/alchemy/icons/7029.png",
+    "item_id": "42033",
+    "template": "alchemy/materials/42033.png"
+  },
+  {
+    "name": "锡沙",
+    "label": "锡沙 (Lv3 锡) [3锡]",
+    "description": "物等: Lv3 | 材质: 锡 | 代码: 3锡",
+    "icon": "resource/image/alchemy/icons/1459.png",
+    "item_id": "42025",
+    "template": "alchemy/materials/42025.png"
+  },
+  {
+    "name": "面粉",
+    "label": "面粉 (Lv3 麦) [3麦]",
+    "description": "物等: Lv3 | 材质: 麦 | 代码: 3麦",
+    "icon": "resource/image/alchemy/icons/1278.png",
+    "item_id": "41121",
+    "template": "alchemy/materials/41121.png"
+  }
+]
