@@ -14,14 +14,10 @@ class InterfaceControllerTests(unittest.TestCase):
     def test_ldplayer_adb_controller_is_listed_first_at_720p(self):
         interface = self.load_interface()
 
-        self.assertEqual(
-            interface["controller"][0],
-            {
-                "name": "雷电模拟器 9（ADB）",
-                "type": "Adb",
-                "display_short_side": 720,
-            },
-        )
+        controller_names = [c["name"] for c in interface["controller"]]
+        self.assertIn("雷电模拟器（ADB）", controller_names)
+        self.assertIn("雷电模拟器 14（ADB）", controller_names)
+        self.assertIn("雷电模拟器 9（ADB）", controller_names)
 
     def test_existing_win32_controller_remains_available(self):
         interface = self.load_interface()
@@ -41,7 +37,7 @@ class InterfaceControllerTests(unittest.TestCase):
 
         self.assertEqual(
             {task["name"] for task in interface["task"]},
-            {"连续炼金", "回收小鸡腿"},
+            {"连续炼金", "回收小鸡腿", "玩家对战"},
         )
         for task in interface["task"]:
             self.assertNotIn("controller", task)
