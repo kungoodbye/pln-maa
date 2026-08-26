@@ -88,7 +88,14 @@
         "template": "arena/plus_btn.png",
         "threshold": 0.8,
         "action": "Click",
+        "target_offset": [
+            0,
+            0,
+            5,
+            5
+        ],
         "post_delay": 800,
+        "rate_limit": 1200,
         "focus": {
             "succeeded": "已精准点击加号按钮，等待购买弹窗"
         },
@@ -129,6 +136,12 @@
         "template": "arena/confirm_btn.png",
         "threshold": 0.8,
         "action": "Click",
+        "target_offset": [
+            0,
+            0,
+            10,
+            5
+        ],
         "post_delay": 800,
         "focus": {
             "succeeded": "已确认消耗绿钻购买活力值 +1"
@@ -183,7 +196,14 @@
         "threshold": 0.8,
         "timeout": 60000,
         "action": "Click",
+        "target_offset": [
+            0,
+            0,
+            10,
+            5
+        ],
         "post_delay": 800,
+        "rate_limit": 1200,
         "focus": {
             "succeeded": "已点击参与对战，开始搜寻对手"
         },
@@ -191,7 +211,8 @@
             "Arena.ConfirmNoChestSlot",
             "Arena.CancelNoChestSlotAndStop",
             "Arena.WaitBattleStart",
-            "Arena.WaitSearching"
+            "Arena.WaitSearching",
+            "Arena.ClickJoinBattle"
         ]
     },
     "Arena.ConfirmNoChestSlot": {
@@ -206,6 +227,12 @@
         "threshold": 0.8,
         "timeout": 60000,
         "action": "Click",
+        "target_offset": [
+            0,
+            0,
+            10,
+            5
+        ],
         "post_delay": 800,
         "focus": {
             "succeeded": "检测到无宝箱栏位提示，已点击确定继续对战"
@@ -227,6 +254,12 @@
         "threshold": 0.8,
         "timeout": 60000,
         "action": "Click",
+        "target_offset": [
+            0,
+            0,
+            10,
+            5
+        ],
         "post_delay": 500,
         "focus": {
             "succeeded": "当前为打宝箱模式：检测到宝箱位已满，已点击取消并安全结束任务"
@@ -288,6 +321,12 @@
         "threshold": 0.75,
         "timeout": 300000,
         "action": "Click",
+        "target_offset": [
+            0,
+            0,
+            5,
+            5
+        ],
         "post_delay": 600,
         "focus": {
             "succeeded": "检测到自动战斗未开启，已点击开启 AI 自动战斗"

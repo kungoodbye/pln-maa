@@ -175,7 +175,8 @@
                             "next": [
                                 "Arena.ConfirmNoChestSlot",
                                 "Arena.WaitBattleStart",
-                                "Arena.WaitSearching"
+                                "Arena.WaitSearching",
+                                "Arena.ClickJoinBattle"
                             ]
                         }
                     }
@@ -188,7 +189,8 @@
                             "next": [
                                 "Arena.CancelNoChestSlotAndStop",
                                 "Arena.WaitBattleStart",
-                                "Arena.WaitSearching"
+                                "Arena.WaitSearching",
+                                "Arena.ClickJoinBattle"
                             ]
                         }
                     }
