@@ -154,6 +154,23 @@
             "succeeded": "绿钻/绑定绿钻不足，任务安全结束"
         }
     },
+    "Arena.StopOnZeroVitality": {
+        "recognition": "OCR",
+        "roi": [
+            820,
+            500,
+            260,
+            50
+        ],
+        "expected": [
+            "0/10",
+            "0/"
+        ],
+        "action": "DoNothing",
+        "focus": {
+            "succeeded": "未开启自动花钻补充活力，当前活力已耗尽 (0/10)，任务安全完成"
+        }
+    },
     "Arena.ClickJoinBattle": {
         "recognition": "TemplateMatch",
         "roi": [
@@ -172,6 +189,7 @@
         },
         "next": [
             "Arena.ConfirmNoChestSlot",
+            "Arena.CancelNoChestSlotAndStop",
             "Arena.WaitBattleStart",
             "Arena.WaitSearching"
         ]
@@ -196,6 +214,23 @@
             "Arena.WaitBattleStart",
             "Arena.WaitSearching"
         ]
+    },
+    "Arena.CancelNoChestSlotAndStop": {
+        "recognition": "TemplateMatch",
+        "roi": [
+            330,
+            620,
+            180,
+            80
+        ],
+        "template": "arena/cancel_btn.png",
+        "threshold": 0.8,
+        "timeout": 60000,
+        "action": "Click",
+        "post_delay": 500,
+        "focus": {
+            "succeeded": "当前为打宝箱模式：检测到宝箱位已满，已点击取消并安全结束任务"
+        }
     },
     "Arena.WaitSearching": {
         "recognition": "TemplateMatch",
@@ -313,7 +348,7 @@
         "recognition": "DirectHit",
         "action": "DoNothing",
         "focus": {
-            "succeeded": "单场对战超过 5 分钟超时限制，任务已安全停止"
+            "succeeded": "单场对战超过超时限制，任务已安全停止"
         }
     }
 }

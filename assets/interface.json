@@ -59,14 +59,64 @@
             "name": "玩家对战",
             "entry": "Arena.EnsureUI",
             "default_check": false,
-            "description": "自动检测活力值并在不足时花费绿钻补至 5 点，自动参与玩家对战，开启 AI 自动战斗并循环进行；支持自定义超时限制与最大场次",
+            "description": "自动参与玩家对战，开启 AI 自动战斗并循环进行；支持活力智能补充、最大场次、单场超时守护及打宝箱模式",
             "option": [
+                "ArenaAutoRefillVitality",
+                "ArenaMaxRounds",
                 "ArenaBattleTimeout",
-                "ArenaMaxRounds"
+                "ArenaChestFullAction"
             ]
         }
     ],
     "option": {
+        "ArenaAutoRefillVitality": {
+            "type": "switch",
+            "label": "活力不足自动消耗绿钻补齐",
+            "description": "开启后活力不足 5 点时自动花钻补充至 5 点；关闭后仅使用当前已有活力，活力耗尽后安全完成任务（零花钻白嫖模式）",
+            "default_case": "Yes",
+            "cases": [
+                {
+                    "name": "Yes",
+                    "label": "开启 (花钻补齐至 5 点)",
+                    "pipeline_override": {
+                        "Arena.EnsureUI": {
+                            "next": [
+                                "Arena.CheckVitality5Plus",
+                                "Arena.CheckVitalityNeedRefill",
+                                "Arena.ClickJoinBattle"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "label": "关闭 (零花钻，体力耗尽即停止)",
+                    "pipeline_override": {
+                        "Arena.EnsureUI": {
+                            "next": [
+                                "Arena.StopOnZeroVitality",
+                                "Arena.ClickJoinBattle"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "ArenaMaxRounds": {
+            "type": "input",
+            "label": "最大对战轮数",
+            "description": "达到指定轮数后自动停止对战；填 0 表示无限循环",
+            "inputs": [
+                {
+                    "name": "max_rounds",
+                    "label": "对战轮次 (0 为无限循环)",
+                    "default": "0",
+                    "pipeline_type": "int",
+                    "verify": "^[0-9]+$",
+                    "pattern_msg": "请输入有效的非负整数"
+                }
+            ]
+        },
         "ArenaBattleTimeout": {
             "type": "select",
             "label": "单场战斗最高超时限制",
@@ -111,18 +161,37 @@
                 }
             ]
         },
-        "ArenaMaxRounds": {
-            "type": "input",
-            "label": "最大对战轮数",
-            "description": "达到指定轮数后自动停止对战；填 0 表示无限循环",
-            "inputs": [
+        "ArenaChestFullAction": {
+            "type": "select",
+            "label": "宝箱栏位已满时行为",
+            "description": "当提示目前没有宝箱栏位时的处理方式",
+            "default_case": "Continue",
+            "cases": [
                 {
-                    "name": "max_rounds",
-                    "label": "对战轮次 (0 为无限循环)",
-                    "default": "0",
-                    "pipeline_type": "int",
-                    "verify": "^[0-9]+$",
-                    "pattern_msg": "请输入有效的非负整数"
+                    "name": "Continue",
+                    "label": "忽略提示继续对战 (冲榜刷分模式)",
+                    "pipeline_override": {
+                        "Arena.ClickJoinBattle": {
+                            "next": [
+                                "Arena.ConfirmNoChestSlot",
+                                "Arena.WaitBattleStart",
+                                "Arena.WaitSearching"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "Stop",
+                    "label": "停止任务 (打宝箱模式，防浪费体力)",
+                    "pipeline_override": {
+                        "Arena.ClickJoinBattle": {
+                            "next": [
+                                "Arena.CancelNoChestSlotAndStop",
+                                "Arena.WaitBattleStart",
+                                "Arena.WaitSearching"
+                            ]
+                        }
+                    }
                 }
             ]
         }

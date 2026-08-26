@@ -65,9 +65,11 @@ flowchart TD
 ## 4. 参数自定义与统计系统设计
 
 ### 4.1 Task Options 可视化配置
-在 [`assets/interface.json`](file:///d:/%E9%A3%98%E6%B5%81%E5%B9%BB%E5%A2%83%E6%96%B0%E4%B8%96%E7%95%8C/pln-auto/assets/interface.json) 中挂载：
-1. **`ArenaBattleTimeout`**：单场战斗最高超时限制（下拉可选 3min / 5min / 10min，通过 `pipeline_override` 动态覆盖）；
-2. **`ArenaMaxRounds`**：最大对战轮数限制（输入框，填 0 为无限循环）。
+在 [`assets/interface.json`](file:///d:/%E9%A3%98%E6%B5%81%E5%B9%BB%E5%A2%83%E6%96%B0%E4%B8%96%E7%95%8C/pln-auto/assets/interface.json) 中挂载 4 项精细化控制项：
+1. **`ArenaAutoRefillVitality`**：活力不足自动花钻补齐开关（开启则补齐至 5 点；关闭则为纯免费零花钻模式，体力耗尽即停止）；
+2. **`ArenaMaxRounds`**：最大对战轮数限制（输入框，填 0 为无限循环，支持填 N 场自动收工）；
+3. **`ArenaBattleTimeout`**：单场战斗最高超时限制（下拉可选 3min / 5min / 10min，动态覆盖轮询时长）；
+4. **`ArenaChestFullAction`**：宝箱位满时行为（冲榜模式继续对战 / 打宝箱模式自动取消并停止）。
 
 ### 4.2 数据统计与战报输出（`agent/arena_stats.py`）
 - 自动追踪单场开始与结束时间，实时计算单场耗时、平均耗时；
